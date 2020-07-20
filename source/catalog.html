@@ -8,45 +8,53 @@
   <body class="page__body">
 
 		<main class="page-main">
-			<h1 class="page-main__title">Каталог продукции</h1>
+			
 			<section class="catalog">
-				<h2 class="visually-hidden">Каталог продукции</h2>
-	      
-	      <article class="catalog__item">
-					<div class="catalog__image">
-	      		<img class="catalog__img" src="https://via.placeholder.com/68x86" width="68" height="86" alt="image">
+				<h1 class="catalog__title">Каталог продукции</h1>
+				
+	      <article class="product">
+					<div class="product__image">
+	      		<img class="product__img" src="https://via.placeholder.com/68x86" width="68" height="86" alt="image">
 	      	</div>
-	      	<div class="catalog__content">
-	      		<h4 class="catalog__title">Cat Energy<br>PRO 500 г</h4>
+	      	<div class="product__content">
+	      		<h2 class="product__name">Cat Energy PRO 500 г</h2>
+	      		<ul class="product-info">
+      				<li class="product-info__item">
+			      		<span>Объем</span>
+			      		<span>500гр</span>
+			      	</li>
+			      	<li class="product-info__item">
+			      		<span>Вкус</span>
+			      		<span>Курица</span>
+			      	</li>
+			      	<li class="product-info__item">
+			      		<span>Цена</span>
+			      		<span>700 Р.</span>
+			      	</li>
+		      	</ul>
 	      	</div>
-	      	<div class="catalog__info">
-	      		<span>Объем 500гр</span><br>
-	      		<span>Вкус Курица</span><br>
-	      		<span>Цена 700 Р.</span>
-	      	</div>
-	      	<button class="catalog__button" type="button"><span>Заказать</span></button>
+	      	<button class="product__button" type="button"><span>Заказать</span></button>
 	      </article>
 	      
-	      <article class="catalog-more">
-	      	<span class="catalog-more__plus">+</span>
+	      <div class="catalog-more">
 	      	<h4 class="catalog-more__title">Показать еще 100500 товаров</h4>
 	      	<p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
 	      	<button class="catalog-more__button" type="button"><span>Показать все</span></button>
-	      </article>
+	      </div>
 	    </section>
 
-	    <section class="catalog-additional">
-	    	<h2 class="catalog-additional__big-title">Дополнительные товары</h2>
-				<article class="catalog-additional__item">
-					<h4 class="catalog-additional__title">Сахарозаменитель</h4>
-	      	<p class="catalog-additional__text">1 упаковка (100 г) 200Р</p>
-	      	<button class="catalog-additional__button" type="button"><span>Заказать</span></button>
+	    <section class="catalog-add">
+	    	<h2 class="catalog-add__title">Дополнительные товары</h2>
+				<article class="product-add">
+					<h4 class="product-add__title">Сахарозаменитель</h4>
+	      	<p class="product-add__text">1 упаковка (100 г) 200Р</p>
+	      	<button class="product-add__button" type="button"><span>Заказать</span></button>
 	      </article>
 	    </section>
 
 	    <section class="gift">
-	    	<img class="gift_image" src="img/svg/gift.svg" width="78" height="80" alt="gift image">
-	    	<p class="gift_text">Закажите все и получите чехол для кота в подарок!</p>
+	    	<img class="gift__image" src="img/svg/gift.svg" width="78" height="80" alt="gift image">
+	    	<p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
 	    </section>
 
 	  </main>
