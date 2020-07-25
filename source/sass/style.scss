@@ -1,4 +1,6 @@
-// Начните писать стили здесь
-body {
-  background-color: blue;
-}
+@import "./default/default";
+@import "./header";
+@import "main-menu";
+
+
+
