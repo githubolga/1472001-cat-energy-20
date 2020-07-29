@@ -1,0 +1,39 @@
+.promo {
+  margin-bottom: 22px;
+}
+
+.promo__wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/index-background-mobile.jpg);
+    width: 320px;
+    height: 305px;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+}
+
+.promo__text {
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.promo__link {
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  width: 280px;
+  height: 40px;
+  margin-left: 20px;
+  margin-left: 20px;
+}
+
