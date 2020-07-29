@@ -1,3 +1,8 @@
+.catalog-more {
+  border-bottom: 1px solid $grey-line;
+  margin-left: 22px;
+}
+
 .catalog-more__title {
   font-size: 16px;
   line-height: 20px;
@@ -12,10 +17,15 @@
   color: $basic-grey;
 }
 
+.catalog-more__link-wrap {
+  background-color: $background-grey;
+  width: 279px;
+  height: 40px;
+}
+
 .catalog-more__link {
   font-size: 16px;
   line-height: 0px;
   text-transform: uppercase;
   color: $basic-grey;
 }
-

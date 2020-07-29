@@ -1,0 +1,37 @@
+.catalog-add {
+  margin-left: 20px;
+}
+
+.catalog-add__title {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-bottom: 1px solid $grey-line-small;
+}
+
+.product-add__title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $catalog-grey;
+}
+
+.product-add__text {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-grey;
+}
+
+.product-add__link-wrap {
+  width: 280px;
+  height: 40px;
+  background-color: $basic-green;
+}
+
+.product-add__link {
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color:$basic-white;
+}
