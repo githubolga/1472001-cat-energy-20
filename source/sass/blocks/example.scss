@@ -1,5 +1,5 @@
 .example {
-  background-color:$grey;
+  background-color: $grey;
   height: 705px;
 }
 
@@ -9,17 +9,17 @@
 }
 
 .example__text {
-  font-family: Arial;
-  color:$basic-grey;
+  font-family: $font-arial;
+  color: $basic-grey;
 }
 
-.example__statistic b{
+.example__statistic b {
   font-size: 24px;
   line-height: 24px;
 }
 
 .example__statistic span {
-  font-family: Arial;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 12px;
   color: $basic-grey;

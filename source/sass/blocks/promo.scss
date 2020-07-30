@@ -8,7 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../img/index-background-mobile.jpg);
+    background-image: url("../img/index-background-mobile.jpg");
     width: 320px;
     height: 305px;
   }
@@ -34,5 +34,5 @@
   width: 280px;
   height: 40px;
   margin-left: 20px;
-  margin-left: 20px;
+  margin-right: 20px;
 }

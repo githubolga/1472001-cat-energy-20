@@ -11,11 +11,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color:$catalog-grey;
+  color: $catalog-grey;
 }
 
 .product-info__item {
-  font-family: Arial;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey;

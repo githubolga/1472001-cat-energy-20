@@ -17,7 +17,7 @@
 }
 
 .product-add__text {
-  font-family: Arial;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 14px;
   color: $basic-grey;
@@ -33,5 +33,5 @@
   font-size: 16px;
   line-height: 0px;
   text-transform: uppercase;
-  color:$basic-white;
+  color: $basic-white;
 }
