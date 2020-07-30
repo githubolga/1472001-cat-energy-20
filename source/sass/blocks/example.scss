@@ -1,0 +1,41 @@
+.example {
+  background-color: $grey;
+  height: 705px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: $font-arial;
+  color: $basic-grey;
+}
+
+.example__statistic b {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__statistic span {
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 12px;
+  color: $basic-grey;
+}
+
+.example__title--small {
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__item {
+  list-style: none;
+}
+
+.slider__buttons {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

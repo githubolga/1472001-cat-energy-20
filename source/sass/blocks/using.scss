@@ -1,0 +1,18 @@
+.using {
+  margin-left: 20px;
+}
+
+.using__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.using__text {
+  font-family: $font-arial;
+  font-weight: 400;
+  color: $basic-grey;
+}
+
+.using__item {
+  list-style: none;
+}

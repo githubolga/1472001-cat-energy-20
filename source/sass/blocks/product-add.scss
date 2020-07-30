@@ -1,0 +1,21 @@
+.product-add__title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $catalog-grey;
+}
+
+.product-add__text {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-grey;
+}
+
+.product-add__link {
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+}

@@ -1,0 +1,28 @@
+.category__item {
+  background-color: $background-grey;
+  width: 280px;
+  height: 266px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.category__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.category__text {
+  font-family: $font-arial;
+  font-weight: 400;
+  color: $basic-grey;
+}
+
+.category__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
