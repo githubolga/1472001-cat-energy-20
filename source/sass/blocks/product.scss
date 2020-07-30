@@ -1,26 +1,25 @@
-.catalog-more {
+.product {
   border-bottom: 1px solid $grey-line;
-  margin-left: 22px;
 }
 
-.catalog-more__title {
+.product__name {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $catalog;
+  color: $catalog-grey;
 }
 
-.catalog-more__text {
+.product-info__item {
   font-family: $font-arial;
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey;
 }
 
-.catalog-more__link {
-  font-size: 16px;
+.product__link {
   line-height: 0px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: $basic-grey;
-  background-color: $background-grey;
+  color: $basic-white;
+  background-color: $basic-green;
 }

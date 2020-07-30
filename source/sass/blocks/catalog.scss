@@ -1,35 +1,4 @@
-.product {
-  border-bottom: 1px solid $grey-line;
-}
-
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
-}
-
-.product__name {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $catalog-grey;
-}
-
-.product-info__item {
-  font-family: $font-arial;
-  font-size: 12px;
-  line-height: 16px;
-  color: $basic-grey;
-}
-
-.product__link-wrap {
-  background-color: $basic-green;
-  width: 280px;
-  height: 40px;
-}
-
-.product__link {
-  line-height: 0px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: $basic-white;
 }
