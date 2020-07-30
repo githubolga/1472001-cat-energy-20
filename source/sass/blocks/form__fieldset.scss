@@ -1,0 +1,13 @@
+.form__fieldset {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-grey;
+  margin-left: 19px;
+}
+
+.form__input {
+  border: 1px solid $grey-border;
+  text-transform: uppercase;
+}
