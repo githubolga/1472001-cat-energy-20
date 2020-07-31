@@ -15,4 +15,23 @@
 
 .using__list {
   @include reset-ul;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .using__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .using__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .using__item {
+    width: 25%;
+  }
 }

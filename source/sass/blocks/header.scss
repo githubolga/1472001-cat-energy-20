@@ -1,1 +1,12 @@
-// header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px 17px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 24px 30px 62px 30px;
+  }
+}
