@@ -1,0 +1,10 @@
+.slider__list {
+  @include reset-ul;
+}
+
+.slider__button {
+  @include reset-button;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

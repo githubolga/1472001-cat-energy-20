@@ -13,6 +13,6 @@
   color: $basic-grey;
 }
 
-.using__item {
-  list-style: none;
+.using__list {
+  @include reset-ul;
 }
