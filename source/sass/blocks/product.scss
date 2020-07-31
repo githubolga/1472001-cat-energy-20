@@ -9,7 +9,11 @@
   color: $catalog-grey;
 }
 
-.product-info__item {
+.product__info {
+  @include reset-ul;
+}
+
+.product__info-item {
   font-family: $font-arial;
   font-size: 12px;
   line-height: 16px;

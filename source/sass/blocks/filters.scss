@@ -1,0 +1,11 @@
+.filters__list {
+  @include reset-ul;
+}
+
+.filters__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
