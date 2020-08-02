@@ -1,6 +1,16 @@
 .catalog-more {
   border-bottom: 1px solid $grey-line;
   margin-left: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    border: 2px solid $background-grey;
+    border-bottom: none;
+  }
 }
 
 .catalog-more__title {

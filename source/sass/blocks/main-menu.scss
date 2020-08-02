@@ -25,6 +25,12 @@
     display: block;
   }
 
+  .main-menu__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .main-menu__list {
     flex-direction: row;
   }
