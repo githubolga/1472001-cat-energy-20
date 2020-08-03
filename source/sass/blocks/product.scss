@@ -1,5 +1,14 @@
 .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+  margin-right: 60px;
   border-bottom: 1px solid $grey-line;
+}
+
+.product__content {
+  margin-bottom: 13px;
 }
 
 .product__name {
@@ -18,6 +27,9 @@
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .product__link {
@@ -26,4 +38,19 @@
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    background-color: $background-grey;
+  }
+
+  .product__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__info-item {
+    font-size: 16px;
+  }
 }

@@ -1,7 +1,10 @@
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
 .category__item {
   background-color: $background-grey;
-  width: 280px;
-  height: 266px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -25,4 +28,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
+}
+
+@media (min-width: $desktop-width) {
+  .category {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
