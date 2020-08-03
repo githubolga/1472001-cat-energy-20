@@ -1,9 +1,8 @@
 .product {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 14px;
-  margin-right: 60px;
   border-bottom: 1px solid $grey-line;
 }
 
@@ -33,9 +32,12 @@
 }
 
 .product__link {
-  line-height: 0px;
+  width: 100%;
+  line-height: 20px;
   font-size: 16px;
+  text-align: center;
   text-transform: uppercase;
+  padding: 10px 0;
   color: $basic-white;
   background-color: $basic-green;
 }
@@ -43,6 +45,11 @@
 @media (min-width: $tablet-width) {
   .product {
     background-color: $background-grey;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0 40px 40px 40px;
+    box-sizing: border-box;
   }
 
   .product__name {
@@ -52,5 +59,11 @@
 
   .product__info-item {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 25%;
   }
 }

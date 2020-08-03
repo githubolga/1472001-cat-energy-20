@@ -1,16 +1,9 @@
 .catalog-more {
   border-bottom: 1px solid $grey-line;
-  margin-left: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (min-width: $tablet-width) {
-  .catalog-more {
-    border: 2px solid $background-grey;
-    border-bottom: none;
-  }
+  box-sizing: border-box;
 }
 
 .catalog-more__title {
@@ -28,9 +21,39 @@
 }
 
 .catalog-more__link {
+  width: 100%;
+  text-align: center;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-grey;
   background-color: $background-grey;
+  padding: 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    border: 2px solid $background-grey;
+    width: 50%;
+    align-self: stretch;
+    justify-content: center;
+    margin-bottom: 14px;
+    padding: 0 40px 0 40px;
+  }
+
+  .catalog-more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .catalog-more__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-more {
+    width: 25%;
+  }
 }
