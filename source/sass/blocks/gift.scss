@@ -1,8 +1,13 @@
 .gift {
   background-image: url("../img/gift-photo-mobile.jpg");
-  width: 280px;
   height: 289px;
-  margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include desktop {
+    background-image: url("../img/gift-photo-desktop.jpg");
+  }
 }
 
 .gift__text {
@@ -10,4 +15,6 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  text-align: center;
+  margin: 0;
 }

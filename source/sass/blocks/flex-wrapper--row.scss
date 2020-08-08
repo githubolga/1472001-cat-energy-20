@@ -1,0 +1,11 @@
+.flex-wrapper--row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 86px 110px 85px 110px;
+  }
+}

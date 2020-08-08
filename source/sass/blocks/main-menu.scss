@@ -1,41 +1,47 @@
 .main-menu {
   display: none;
+
+  @include tablet {
+    display: block;
+  }
 }
 
 .main-menu.m-show {
   display: block;
 }
 
+.main-menu__close {
+  @include tablet {
+    display: none;
+  }
+}
+
 .main-menu__list {
   @include reset-ul;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .main-menu__link {
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   text-transform: uppercase;
   color: $basic-black;
-}
 
-@media (min-width: $tablet-width) {
-  .main-menu {
-    display: block;
-  }
-
-  .main-menu__link {
+  @include tablet {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .main-menu__list {
-    flex-direction: row;
-  }
-
-  .main-menu__close {
-    display: none;
+  @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: $catalog;
   }
 }

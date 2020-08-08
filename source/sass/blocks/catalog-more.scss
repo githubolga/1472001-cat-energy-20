@@ -1,6 +1,7 @@
 .catalog-more {
   border-bottom: 1px solid $grey-line;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -15,7 +16,7 @@
     padding: 0 40px 0 40px;
   }
 
-  @mixin desktop {
+  @include desktop {
     width: 25%;
   }
 }
@@ -24,7 +25,9 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $catalog;
+  margin: 0;
 
   @include tablet {
     font-size: 20px;
@@ -37,6 +40,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey;
+  text-align: center;
+  margin: 0;
 
   @include tablet {
     font-size: 16px;

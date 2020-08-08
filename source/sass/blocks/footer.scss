@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media (min-width: $tablet-width) {
+@include tablet {
   .footer {
     flex-direction: row;
     justify-content: space-between;
