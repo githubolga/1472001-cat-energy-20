@@ -34,48 +34,52 @@
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-        <fieldset class="form__fieldset">
-          <p class="form__item">
-            <label class="form__label" for="form-name">Имя:*</label>
-            <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик" required>
-          </p>
-          <p class="form__item">
-            <label class="form__label" for="form-weight">Вес(кг):*</label>
-            <input class="form__input" id="form-weight" type="text" name="weight" placeholder="7" required>
-          </p>
-          <p class="form__item">
-            <label class="form__label" for="form-age">Возраст(лет):</label>
-            <input class="form__input" id="form-age" type="text" name="age" placeholder="7">
-          </p>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset form__fieldset--bio">
+            <p class="form__item">
+              <label class="form__label" for="form-name">Имя:*</label>
+              <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик" required>
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="form-weight">Вес(кг):*</label>
+              <input class="form__input" id="form-weight" type="text" name="weight" placeholder="7" required>
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="form-age">Возраст(лет):</label>
+              <input class="form__input" id="form-age" type="text" name="age" placeholder="7">
+            </p>
+          </fieldset>
 
-        <fieldset class="filters form__fieldset">
-          <ul class="filters__list">
-            <li class="filters__item">
-              <input id="filter-slim" class="filters__radio" type="radio" name="programm" value="slim" checked>
-              <label class="filters__label" for="filter-slim">Похудение</label>
-            </li>
-            <li class="filters__item">
-              <input id="filter-gain" class="filters__radio" type="radio" name="programm" value="gain">
-              <label class="filters__label" for="filter-gain">Набор массы</label>
-            </li>
-            <li class="filters__item">
-              <input id="filter-advice" class="filters__radio" type="radio" name="programm" value="advice">
-              <label class="filters__label" for="filter-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="filters form__fieldset form__fieldset--programm">
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input id="filter-slim" class="filters__radio" type="radio" name="programm" value="slim" checked>
+                <label class="filters__label" for="filter-slim">Похудение</label>
+              </li>
+              <li class="filters__item">
+                <input id="filter-gain" class="filters__radio" type="radio" name="programm" value="gain">
+                <label class="filters__label" for="filter-gain">Набор массы</label>
+              </li>
+              <li class="filters__item">
+                <input id="filter-advice" class="filters__radio" type="radio" name="programm" value="advice">
+                <label class="filters__label" for="filter-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <p class="form__item">
-              <label class="form__label" for="form-email">E-mail:*</label>
-              <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </p>
-            <p class="form__item">
-              <label class="form__label" for="form-tel">Телефон:*</label>
-              <input class="form__input" id="form-tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </p>
+            <div class="form__wrapper">
+              <p class="form__item form__item--contact">
+                <label class="form__label" for="form-email">E-mail:*</label>
+                <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="form__item form__item--contact">
+                <label class="form__label" for="form-tel">Телефон:*</label>
+                <input class="form__input" id="form-tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
         </fieldset>
 
         <fieldset class="form__fieldset">
@@ -87,29 +91,30 @@
         </fieldset>
 
         <fieldset class="filters form__fieldset">
-          <legend class="form__legend">Дополнительно:</legend>
-          <ul class="filters__list">
-            <li class="filters__item">
+          <legend class="form__legend">Дополнительно</legend>
+          <ul class="filters__list filters__list--add">
+            <li class="filters__item filters__item--add">
               <input id="filter-sugar" class="filters__checkbox" type="checkbox" name="additional" value="sugar" checked>
               <label class="filters__label" for="filter-sugar">Сахарозаменитель</label>
             </li>
-            <li class="filters__item">
+            <li class="filters__item filters__item--add">
               <input id="filter-water" class="filters__checkbox" type="checkbox" name="additional" value="water">
               <label class="filters__label" for="filter-water">Питьевая вода</label>
             </li>
-            <li class="filters__item">
+            <li class="filters__item filters__item--add">
               <input id="filter-milk" class="filters__checkbox" type="checkbox" name="additional" value="milk">
               <label class="filters__label" for="filter-milk">Молоко</label>
             </li>
-            <li class="filters__item">
+            <li class="filters__item filters__item--add">
               <input id="filter-vit" class="filters__checkbox" type="checkbox" name="additional" value="vit">
               <label class="filters__label" for="filter-vit">Витамины</label>
             </li>
           </ul>
         </fieldset>
-
-        <button class="form__button" type="submit">Отправить заявку</button>
-        <p class="form__help">* — Обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="form__button" type="submit">Отправить заявку</button>
+          <p class="form__help">* — Обязательные поля</p>
+        </div>
       </form>
 
       <section class="contact">

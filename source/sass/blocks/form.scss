@@ -1,10 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 70px;
+  }
+
+  @include desktop {
+    padding: 0 30px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .form__title {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form__text {
   text-transform: uppercase;
+  margin: 0;
+  width: 230px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+  }
 }
 
 .form__fieldset {
@@ -13,22 +51,54 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-grey;
-  padding: 0 20px 25px 20px;
+  padding: 0;
   margin: 0;
   border: 0;
   border-bottom: 1px solid $grey-fieldset;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__fieldset--bio,
+.form__fieldset--programm {
+  @include desktop {
+    width: 50%;
+  }
 }
 
 .form__item {
   margin: 0 0 14px 0;
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.form__item--contact {
+  @include desktop {
+    width: 48%;
+  }
+}
+
 .form__label {
   margin-right: 14px;
+  flex-shrink: 0;
 }
 
 .form__input {
@@ -37,6 +107,7 @@
   padding: 10px 20px;
   transition: border-color 0.3s linear;
   outline: 0;
+
 
   &:hover {
     border-color: $grey-line-small;
@@ -49,9 +120,14 @@
   &:invalid {
     border-color: $red;
   }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .form__textarea {
+  width: 100%;
   min-height: 150px;
   box-sizing: border-box;
   border: 1px solid $grey-border;
@@ -66,6 +142,20 @@
 
   &:focus {
     border-color: $basic-grey;
+  }
+
+  @include tablet {
+    min-height: 174px;
+  }
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
   }
 }
 
@@ -86,6 +176,14 @@
 
   &:active {
     color: $green-active-text;
+  }
+
+  @include tablet {
+    width: 44%;
+  }
+
+  @include desktop {
+    width: 568px;
   }
 }
 

@@ -1,5 +1,32 @@
 .filters__list {
   @include reset-ul;
+
+  @include tablet {
+    border: 1px solid $grey-border;
+    padding: 25px 28px 29px 28px;
+  }
+}
+
+.filters__list--add {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+
+   @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+ .filters__item--add {
+   @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 25%;
+  }
 }
 
 .filters__item {

@@ -1,8 +1,10 @@
-.flex-wrapper--row {
+.flex-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
 
+.flex-wrapper--desktop-row {
   @include desktop {
     flex-direction: row;
     justify-content: space-between;

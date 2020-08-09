@@ -4,9 +4,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 43px 60px;
+  box-sizing: border-box;
+
+  @include tablet {
+    flex-direction: row;
+  }
 
   @include desktop {
     background-image: url("../img/gift-photo-desktop.jpg");
+    flex-direction: column;
   }
 }
 
