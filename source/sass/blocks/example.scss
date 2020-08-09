@@ -1,21 +1,69 @@
+.wrapper {
+  @include desktop {
+    display: flex;
+  }
+
+}
+
 .example {
   background-color: $grey;
-  height: 705px;
+  padding: 27px 21px 25px 20px;
+
+  @include tablet {
+    padding: 43px 31px 33px 30px;
+    background-color: $basic-white;
+  }
+
+   @include desktop {
+    width: 40%;
+   }
 }
 
 .example__title {
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
 }
 
 .example__text {
   font-family: $font-arial;
   color: $basic-grey;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.example__info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__statistic b {
   font-size: 24px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+  font-size: 30px;
+  line-height: 37px;
+  }
 }
 
 .example__statistic span {
@@ -23,9 +71,22 @@
   font-size: 12px;
   line-height: 12px;
   color: $basic-grey;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__title-small {
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @include tablet {
+  font-size: 20px;
+  width: 200px;
+  text-align: right;
+  }
 }

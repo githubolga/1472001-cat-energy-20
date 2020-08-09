@@ -1,10 +1,35 @@
-.slider__list {
-  @include reset-ul;
+.slider {
+  display: flex;
+  flex-direction: column;
 }
 
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    background-color: $grey;
+  }
+}
+
+.slider__list {
+  @include reset-ul;
+  display: flex;
+  align-items: center;
+}
+
+.slider__buttons {
+  display: flex;
+  justify-content: space-between;
+}
 .slider__button {
   @include reset-button;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -12,15 +12,15 @@
   flex-direction: column;
   border: 0;
 
-   @include tablet {
+  @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
- .filters__item--add {
-   @include tablet {
+.filters__item--add {
+  @include tablet {
     width: 50%;
   }
 
