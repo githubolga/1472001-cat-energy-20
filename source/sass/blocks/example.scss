@@ -1,22 +1,23 @@
-.wrapper {
-  @include desktop {
-    display: flex;
-  }
-
-}
-
 .example {
   background-color: $grey;
   padding: 27px 21px 25px 20px;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
     padding: 43px 31px 33px 30px;
     background-color: $basic-white;
   }
 
-   @include desktop {
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.example__flex {
+  @include desktop {
     width: 40%;
-   }
+  }
 }
 
 .example__title {
@@ -44,9 +45,18 @@
 
 .example__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
 .example__info {
@@ -61,8 +71,12 @@
   flex-direction: column;
 
   @include tablet {
-  font-size: 30px;
-  line-height: 37px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @include desktop {
+    align-items: left;
   }
 }
 
@@ -85,8 +99,13 @@
   margin: 0;
 
   @include tablet {
-  font-size: 20px;
-  width: 200px;
-  text-align: right;
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+  }
+
+  @include desktop {
+    width: 100%;
+    text-align: left;
   }
 }
