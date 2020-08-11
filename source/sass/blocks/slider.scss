@@ -1,10 +1,8 @@
-.slider__wrapper {
+.slider {
   display: flex;
-  justify-content: center;
-
-  @include tablet {
-    background-color: $grey;
-  }
+  flex-direction: column;
+  align-items: center;
+  background-color: $grey;
 }
 
 .slider__list {
@@ -16,6 +14,7 @@
 .slider__buttons {
   display: flex;
   justify-content: space-between;
+  width: 230px;
 }
 
 .slider__button {

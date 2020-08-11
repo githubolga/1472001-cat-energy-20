@@ -16,6 +16,14 @@
   }
 }
 
+.main-menu__item {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .main-menu__list {
   @include reset-ul;
   display: flex;

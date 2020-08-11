@@ -1,22 +1,29 @@
 .example {
   background-color: $grey;
-  padding: 27px 21px 25px 20px;
   display: flex;
   flex-direction: column;
 
   @include tablet {
-    padding: 43px 31px 33px 30px;
     background-color: $basic-white;
   }
 
   @include desktop {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .example__flex {
+  padding: 27px 20px 25px 20px;
+  box-sizing: border-box;
+
+  @include tablet {
+    padding: 43px 30px 33px 30px;
+  }
+
   @include desktop {
     width: 40%;
+    background-color: $grey;
   }
 }
 
@@ -24,11 +31,14 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  padding: 0 20px;
+  width: 100%;
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+    padding: 0 30px;
   }
 }
 
@@ -107,5 +117,13 @@
   @include desktop {
     width: 100%;
     text-align: left;
+  }
+}
+
+.example__slider {
+  width: 100%;
+
+  @include desktop {
+    width: 60%;
   }
 }
