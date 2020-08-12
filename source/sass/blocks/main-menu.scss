@@ -45,6 +45,10 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 
   @include desktop {

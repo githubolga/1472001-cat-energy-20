@@ -46,6 +46,7 @@
 .using__icon {
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
   background-color: $basic-green;
   margin-right: 20px;
   box-sizing: border-box;
