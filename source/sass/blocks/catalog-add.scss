@@ -1,10 +1,38 @@
 .catalog-add {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .catalog-add__title {
+  width: 100%;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  border-bottom: 1px solid $grey-line-small;
+  margin: 0;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+
+.catalog-add__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 86px 110px 85px 110px;
+  }
+}
+
+.catalog-add__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

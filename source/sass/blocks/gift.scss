@@ -1,8 +1,24 @@
 .gift {
   background-image: url("../img/gift-photo-mobile.jpg");
-  width: 280px;
   height: 289px;
-  margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 43px 60px;
+  box-sizing: border-box;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    background-image: url("../img/gift-photo-desktop.jpg");
+    flex-direction: column;
+  }
 }
 
 .gift__text {
@@ -10,4 +26,6 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  text-align: center;
+  margin: 0;
 }

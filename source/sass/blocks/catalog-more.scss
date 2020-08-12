@@ -1,15 +1,23 @@
 .catalog-more {
   border-bottom: 1px solid $grey-line;
-  margin-left: 22px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-}
+  box-sizing: border-box;
+  width: 100%;
 
-@media (min-width: $tablet-width) {
-  .catalog-more {
+  @include tablet {
     border: 2px solid $background-grey;
-    border-bottom: none;
+    width: 50%;
+    align-self: stretch;
+    justify-content: center;
+    margin-bottom: 14px;
+    padding: 0 40px 0 40px;
+  }
+
+  @include desktop {
+    width: 25%;
   }
 }
 
@@ -17,7 +25,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $catalog;
+  margin: 0;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog-more__text {
@@ -25,12 +40,22 @@
   font-size: 12px;
   line-height: 16px;
   color: $basic-grey;
+  text-align: center;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog-more__link {
+  width: 100%;
+  text-align: center;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basic-grey;
   background-color: $background-grey;
+  padding: 10px 0;
 }
