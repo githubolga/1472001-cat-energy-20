@@ -54,6 +54,10 @@
   @include desktop {
     font-size: 20px;
     line-height: 30px;
-    color: $catalog;
+    color: $basic-white;
+
+    &--active {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }

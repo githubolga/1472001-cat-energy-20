@@ -3,10 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 11px 20px 17px 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .header {
+  @include tablet {
     padding: 24px 30px 60px 30px;
+  }
+
+  @include desktop {
+    padding: 53px 110px 114px 110px;
   }
 }
