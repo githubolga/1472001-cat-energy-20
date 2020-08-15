@@ -10,11 +10,15 @@
   <body class="page__body">
 
     <header class="header">
-      <a class="header__logo" href="#">
+     <a class="header__logo" href="#">
         <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
       </a>
-
-      <nav class="main-menu">
+      <button class="header__burger js-menu-button" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-menu js-menu no-js">
         <ul class="main-menu__list">
           <li class="main-menu__item">
             <a class="main-menu__link main-menu__link--active" href="index.html">Главная</a>
@@ -27,7 +31,6 @@
           </li>
         </ul>
       </nav>
-      <button class="main-menu__close" type="button"></button>
     </header>
 
     <main class="page-main">
@@ -173,5 +176,6 @@
       </div>
     </footer>
 
+    <script src="./js/script.js"></script>
   </body>
 </html>

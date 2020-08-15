@@ -9,14 +9,12 @@
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
-}
 
-.using__text {
-  font-family: $font-arial;
-  font-weight: 400;
-  color: $basic-grey;
-  padding: 0;
-  margin: 0;
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+   }
 }
 
 .using__list {
@@ -33,9 +31,12 @@
 .using__item {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 
   @include tablet {
     width: 50%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 
   @include desktop {
@@ -50,4 +51,23 @@
   background-color: $basic-green;
   margin-right: 20px;
   box-sizing: border-box;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+}
+
+.using__text {
+  font-family: $font-arial;
+  font-weight: 400;
+  color: $basic-grey;
+  padding: 0;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

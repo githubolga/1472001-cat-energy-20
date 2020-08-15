@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 20px 17px 20px;
+  flex-wrap: wrap;
+  padding: 11px 20px 0 20px;
 
   @include tablet {
     padding: 24px 30px 60px 30px;
@@ -10,5 +11,48 @@
 
   @include desktop {
     padding: 53px 110px 114px 110px;
+  }
+}
+
+.header__logo {
+  margin-bottom: 16px;
+}
+
+.header__burger {
+  @include reset-button;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  & span {
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+@include tablet {
+    display: none;
+  }
+}
+
+.header__burger.m-show {
+  & span {
+    margin-bottom: 0;
+
+    &:nth-child(3) {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
   }
 }
