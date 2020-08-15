@@ -2,7 +2,7 @@ var buttonMenu = document.querySelector(".js-menu-button");
 var menu = document.querySelector(".js-menu");
 
 if (menu.classList.contains("no-js")) {
-   menu.classList.remove("no-js");
+    menu.classList.remove("no-js");
 }
 
 

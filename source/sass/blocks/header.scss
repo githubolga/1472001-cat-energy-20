@@ -25,16 +25,17 @@
   margin-bottom: 16px;
 
   & span {
-  width: 24px;
-  height: 2px;
-  background-color: $basic-black;
-  margin-bottom: 5px;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+    margin-bottom: 5px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-}
-@include tablet {
+
+  @include tablet {
     display: none;
   }
 }

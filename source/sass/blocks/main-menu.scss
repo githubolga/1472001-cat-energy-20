@@ -16,14 +16,14 @@
 }
 
 .main-menu__item {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid $grey-menu;
   padding-bottom: 24px;
   padding-top: 22px;
   width: 100%;
   text-align: center;
 
   &:first-child {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid $grey-menu;
   }
 
   @include tablet {
