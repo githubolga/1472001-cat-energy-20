@@ -2,3 +2,18 @@
   @include reset-ul;
   display: flex;
 }
+
+.social__link {
+  &:hover .social__icon {
+    fill: $basic-green;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+  transition: all 0.3s linear;
+}
