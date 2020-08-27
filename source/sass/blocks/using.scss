@@ -1,6 +1,15 @@
 .using {
   padding: 0 20px;
   margin-bottom: 42px;
+
+  @include tablet {
+    border-bottom: 1px solid $grey-menu;
+  }
+
+  @include desktop {
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
 }
 
 .using__title {
@@ -36,11 +45,29 @@
   @include tablet {
     width: 50%;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+
+    &:nth-child(3n) {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 
   @include desktop {
     width: 25%;
+    margin-bottom: 0;
+    align-items: flex-start;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -69,5 +96,9 @@
   @include tablet {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @include desktop {
+    align-items: flex-start;
   }
 }
