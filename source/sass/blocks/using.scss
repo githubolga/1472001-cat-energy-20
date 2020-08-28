@@ -4,6 +4,7 @@
 
   @include tablet {
     border-bottom: 1px solid $grey-menu;
+    padding: 0 30px;
   }
 
   @include desktop {

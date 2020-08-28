@@ -10,12 +10,20 @@
   }
 
   @include desktop {
-    padding: 53px 110px 114px 110px;
+    padding: 53px 110px 111px 110px;
   }
 }
 
 .header__logo {
   margin-bottom: 16px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .header__burger {

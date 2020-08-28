@@ -15,6 +15,16 @@
   display: block;
 }
 
+.main-menu__list {
+  @include reset-ul;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
 .main-menu__item {
   border-bottom: 1px solid $grey-menu;
   padding-bottom: 24px;
@@ -24,6 +34,14 @@
 
   &:first-child {
     border-top: 1px solid $grey-menu;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 
   @include tablet {
@@ -38,16 +56,6 @@
     &:first-child {
       border: 0;
     }
-  }
-}
-
-.main-menu__list {
-  @include reset-ul;
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
-    flex-direction: row;
   }
 }
 

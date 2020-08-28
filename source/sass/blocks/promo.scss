@@ -1,42 +1,42 @@
 .promo {
-  margin-bottom: 22px;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: url("../img/index-background-mobile.jpg");
-  background-size: 100% 305px;
-  background-repeat: no-repeat;
-  background-position: center top;
+  margin-bottom: 22px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-color: $basic-green;
-  //   background-image: url("../img/index-background-mobile.jpg");
-  //   background-size: 100% 305px;
-  //   background-repeat: no-repeat;
-  //   z-index: -1;
-  //   height: 305px;
-  //   width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-background-mobile.jpg");
+    background-color: $green-background;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1;
+    height: 305px;
+    width: 100%;
+  }
 
   @include tablet {
     background-image: none;
     background-color: transparent;
+
+    &::before {
+      display: none;
+    }
   }
 
   @include desktop {
-    // background-image: url("../img/index-background-mobile.jpg");
-    z-index: -2;
-    height: 696px;
-    width: 60%;
-    top: -208px;
-    right: 0;
-    background-color: $basic-green;
-  }
-
-  @include tablet {
-    margin-bottom: 0;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-background-desktop.jpg");
+      z-index: -1;
+      height: 696px;
+      width: 50%;
+      top: -242px;
+      right: 0;
+    }
   }
 }
 
@@ -52,8 +52,7 @@
   }
 
   @include desktop {
-    padding: 0 110px;
-    align-items: center;
+    padding: 0 80px;
   }
 }
 
@@ -93,6 +92,10 @@
     width: 450px;
     margin-bottom: 49px;
   }
+
+  @include desktop {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__image {
@@ -108,12 +111,11 @@
     width: 709px;
     height: 609px;
     order: 4;
-    align-items: center;
   }
 
   @include desktop {
-    left: 325px;
-    top: -306px;
+    left: 478px;
+    top: -359px;
     width: 552px;
     height: 499px;
     margin-bottom: 0;

@@ -109,9 +109,11 @@
   font-size: 12px;
   line-height: 12px;
   color: $basic-grey;
-  width: 60px;
+  width: 85px;
+  background-color: $grey;
+  margin: 0 auto;
   position: absolute;
-  left: 32px;
+  left: 22px;
   top: 44px;
 
   @include tablet {

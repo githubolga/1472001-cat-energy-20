@@ -11,7 +11,11 @@
 
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
+        <picture>
+          <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+        </picture>
       </a>
       <button class="header__burger js-menu-button" type="button">
         <span></span>
