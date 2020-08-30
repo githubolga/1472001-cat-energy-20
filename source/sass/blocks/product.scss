@@ -4,6 +4,7 @@
   margin-bottom: 14px;
   border-bottom: 1px solid $grey-line;
   width: 100%;
+  padding-bottom: 30px;
 
   @include tablet {
     background-color: $background-grey;
@@ -13,6 +14,11 @@
     padding: 0 37px 40px 37px;
     box-sizing: border-box;
     margin-bottom: 130px;
+    border-bottom: none;
+
+    &:nth-child (even) {
+      margin-right: 60px;
+    }
   }
 
   @include desktop {
@@ -36,7 +42,7 @@
 .product__image {
   width: 50%;
 
-   @include tablet {
+  @include tablet {
     width: 100%;
     position: relative;
     top: -58px;
@@ -66,7 +72,6 @@
     width: 166px;
     text-align: center;
     margin: 30px auto;
-
   }
 
   @include desktop {
