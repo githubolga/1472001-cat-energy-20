@@ -1,9 +1,16 @@
 .social {
   @include reset-ul;
   display: flex;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.social__item {
+  margin-right: 36px;
 }
 
 .social__link {
+   margin-right: 36px;
+
   &:hover .social__icon {
     fill: $basic-green;
   }

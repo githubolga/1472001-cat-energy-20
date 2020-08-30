@@ -15,9 +15,10 @@
     box-sizing: border-box;
     margin-bottom: 130px;
     border-bottom: none;
+    margin-right: 60px;
 
     &:nth-child (even) {
-      margin-right: 60px;
+      margin-right: 0;
     }
   }
 
