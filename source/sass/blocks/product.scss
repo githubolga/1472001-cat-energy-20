@@ -10,8 +10,8 @@
     background-color: $background-grey;
     flex-direction: column;
     align-items: center;
-    width: calc(50% - 60px);
-    padding: 0 37px 40px 37px;
+    width: calc(50% - 30px);
+    padding-bottom: 40px;
     box-sizing: border-box;
     margin-bottom: 130px;
     border-bottom: none;
@@ -30,13 +30,14 @@
 .product__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 13px;
-  margin-top: 17px;
   width: 100%;
+  padding: 132px 36px 0 36px;
+  box-sizing: border-box;
+  position: relative;
 
   @include tablet {
     flex-direction: column;
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 }
 
@@ -45,8 +46,9 @@
 
   @include tablet {
     width: 100%;
-    position: relative;
-    top: -58px;
+    position: absolute;
+    bottom: 192px;
+    left: 0;
   }
 }
 
@@ -95,8 +97,9 @@
 
   @include tablet {
     font-size: 16px;
-    margin-bottom: 9px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $grey-line-small;
+    margin-bottom: 7px;
   }
 }
 
@@ -109,4 +112,8 @@
   padding: 10px 0;
   color: $basic-white;
   background-color: $basic-green;
+
+  @include tablet {
+    width: calc(100% - 72px);
+  }
 }
