@@ -29,6 +29,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 140px;
+  color: $catalog;
 
   @include tablet {
     font-size: 20px;
