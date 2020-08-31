@@ -1,6 +1,16 @@
 .using {
   padding: 0 20px;
   margin-bottom: 42px;
+
+  @include tablet {
+    border-bottom: 1px solid $grey-menu;
+    padding: 0 30px;
+  }
+
+  @include desktop {
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
 }
 
 .using__title {
@@ -9,14 +19,12 @@
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
-}
 
-.using__text {
-  font-family: $font-arial;
-  font-weight: 400;
-  color: $basic-grey;
-  padding: 0;
-  margin: 0;
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .using__list {
@@ -28,25 +36,75 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 
 .using__item {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 
   @include tablet {
     width: 50%;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 
   @include desktop {
     width: 25%;
+    max-width: 250px;
+    margin-bottom: 0;
+    align-items: flex-start;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .using__icon {
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
   background-color: $basic-green;
   margin-right: 20px;
   box-sizing: border-box;
+
+  @include tablet {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+}
+
+.using__text {
+  font-family: $font-arial;
+  font-weight: 400;
+  color: $basic-grey;
+  padding: 0;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include desktop {
+    align-items: flex-start;
+  }
 }

@@ -1,27 +1,18 @@
 .main-menu {
   display: none;
+  position: relative;
+  width: 100%;
+
 
   @include tablet {
     display: block;
+    width: auto;
   }
 }
 
-.main-menu.m-show {
+.main-menu.m-show,
+.main-menu.no-js {
   display: block;
-}
-
-.main-menu__close {
-  @include tablet {
-    display: none;
-  }
-}
-
-.main-menu__item {
-  margin-right: 34px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .main-menu__list {
@@ -31,6 +22,40 @@
 
   @include tablet {
     flex-direction: row;
+  }
+}
+
+.main-menu__item {
+  border-bottom: 1px solid $grey-menu;
+  padding-bottom: 24px;
+  padding-top: 22px;
+  width: 100%;
+  text-align: center;
+
+  &:first-child {
+    border-top: 1px solid $grey-menu;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @include tablet {
+    margin-right: 34px;
+    width: auto;
+    border: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      border: 0;
+    }
   }
 }
 
@@ -45,11 +70,19 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 
   @include desktop {
     font-size: 20px;
     line-height: 30px;
-    color: $catalog;
+    color: $basic-white;
+
+    &--active {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }

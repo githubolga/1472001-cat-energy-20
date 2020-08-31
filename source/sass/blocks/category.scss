@@ -1,34 +1,94 @@
 .category {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 0 20px;
   margin-bottom: 10px;
 
   @include tablet {
     padding: 0 30px;
+    margin-bottom: 45px;
   }
 
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto 70px;
+    padding: 0;
   }
 }
 
 .category__item {
   background-color: $background-grey;
-  padding: 20px 20px;
+  padding: 30px 30px 20px 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+
+  @include tablet {
+    padding: 77px 60px 53px 52px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include desktop {
+    padding: 77px 51px 55px 52px;
+    width: calc(50% - 40px);
+    margin-bottom: 0;
+  }
+}
+
+.category__image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 21px;
+  background: $basic-green;
+
+  @include tablet {
+    right: 60px;
+    top: 91px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @include desktop {
+    left: 52px;
+    top: 47px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .category__title {
   font-size: 24px;
   line-height: 37px;
+  text-align: left;
   text-transform: uppercase;
   color: $basic-black;
   padding: 0;
   margin: 0;
-  text-align: center;
   margin-bottom: 22px;
+  padding-left: 70px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    text-align: center;
+    margin-bottom: 73px;
+  }
 }
 
 .category__text {
@@ -40,6 +100,19 @@
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-fieldset;
   margin-bottom: 15px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    width: calc(100% - 210px);
+    border-bottom: none;
+    margin-bottom: 48px;
+  }
+
+  @include desktop {
+    width: 100%;
+    margin-bottom: 23px;
+  }
 }
 
 .category__link {
@@ -47,4 +120,9 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

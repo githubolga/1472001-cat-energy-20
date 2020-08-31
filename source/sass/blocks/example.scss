@@ -14,7 +14,7 @@
 }
 
 .example__flex {
-  padding: 27px 20px 25px 20px;
+  padding: 33px 20px 42px 20px;
   box-sizing: border-box;
 
   @include tablet {
@@ -31,8 +31,9 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  padding: 0 20px;
+  padding: 27px 20px 0 20px;
   width: 100%;
+  box-sizing: border-box;
 
   @include tablet {
     font-size: 60px;
@@ -46,6 +47,7 @@
   font-family: $font-arial;
   color: $basic-grey;
   margin: 0;
+  padding-bottom: 25px;
 
   @include tablet {
     font-size: 16px;
@@ -72,11 +74,23 @@
 .example__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.example__statistic {
+  position: relative;
+  border: 1px solid $grey-line-small;
+  border-radius: 5px;
+  text-align: center;
+  width: 124px;
 }
 
 .example__statistic b {
   font-size: 24px;
   line-height: 24px;
+  padding: 14px 20px;
   display: flex;
   flex-direction: column;
 
@@ -95,6 +109,12 @@
   font-size: 12px;
   line-height: 12px;
   color: $basic-grey;
+  width: 85px;
+  background-color: $grey;
+  margin: 0 auto;
+  position: absolute;
+  left: 22px;
+  top: 44px;
 
   @include tablet {
     font-size: 14px;

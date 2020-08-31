@@ -1,4 +1,40 @@
 .social {
   @include reset-ul;
   display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $grey-fieldset;
+  border-top: 1px solid $grey-fieldset;
+  padding: 20px 0 21px 0;
+  width: 100%;
+  align-items: center;
+
+  @include tablet {
+    border-bottom: none;
+    border-top: none;
+  }
+}
+
+.social__item {
+  margin-right: 35px;
+
+  @include tablet {
+    margin-right: 25px;
+  }
+}
+
+.social__link {
+  margin-right: 36px;
+
+  &:hover .social__icon {
+    fill: $basic-green;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+  transition: all 0.3s linear;
 }

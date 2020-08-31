@@ -1,38 +1,58 @@
 .promo {
-  margin-bottom: 22px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
 
   &::before {
     content: "";
     position: absolute;
     background-image: url("../img/index-background-mobile.jpg");
+    background-color: $green-background;
+    background-repeat: no-repeat;
+    background-position: bottom;
     z-index: -1;
     height: 305px;
     width: 100%;
+  }
 
-    @include tablet {
-      background-image: none;
+  @include tablet {
+    background-image: none;
+    background-color: transparent;
+
+    &::before {
+      display: none;
     }
   }
 
   @include desktop {
-    content: "";
-    position: absolute;
-    background-image: url("../img/index-background-mobile.jpg");
-    z-index: -2;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-background-desktop.jpg");
+      z-index: -1;
+      height: 696px;
+      width: 50%;
+      top: -242px;
+      right: 0;
+    }
   }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
   padding: 0 20px;
 
   @include tablet {
-    padding: 0 30px;
     position: relative;
+    padding: 0 117px;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    padding: 0 80px;
   }
 }
 
@@ -41,9 +61,9 @@
   line-height: 36px;
   color: $basic-white;
   margin: 0;
-  padding: 0;
+  padding: 25px 0;
   text-align: center;
-  margin-bottom: 25px;
+
 
   @include tablet {
     font-size: 60px;
@@ -51,6 +71,8 @@
     color: $basic-black;
     text-align: left;
     width: 450px;
+    padding: 0;
+    margin-bottom: 41px;
   }
 }
 
@@ -59,7 +81,6 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0;
-  padding: 0;
   text-align: center;
   margin-bottom: 30px;
 
@@ -68,22 +89,36 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
+    width: 450px;
+    margin-bottom: 49px;
+  }
+
+  @include desktop {
+    margin-bottom: 52px;
   }
 }
 
 .promo__image {
   margin-bottom: 3px;
+  justify-content: center;
+  display: flex;
 
   @include tablet {
-    content: "";
-    position: absolute;
+    position: relative;
     z-index: -1;
-    top: 81px;
+    top: -75px;
+    left: -87px;
+    width: 709px;
+    height: 609px;
+    order: 4;
   }
 
   @include desktop {
-    left: 558px;
-    top: 141px;
+    left: 478px;
+    top: -359px;
+    width: 552px;
+    height: 499px;
+    margin-bottom: 0;
   }
 }
 
@@ -93,4 +128,14 @@
   color: $basic-white;
   background-color: $basic-green;
   padding: 7px 44px;
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @include tablet {
+    order: 3;
+    width: 244px;
+    padding: 14px 26px;
+    margin: 0;
+  }
 }

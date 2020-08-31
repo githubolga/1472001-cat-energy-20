@@ -1,18 +1,25 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 14px;
   border-bottom: 1px solid $grey-line;
   width: 100%;
+  padding-bottom: 30px;
 
   @include tablet {
     background-color: $background-grey;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    padding: 0 40px 40px 40px;
+    width: calc(50% - 30px);
+    padding-bottom: 40px;
     box-sizing: border-box;
+    margin-bottom: 130px;
+    border-bottom: none;
+    margin-right: 60px;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
 
   @include desktop {
@@ -20,20 +27,54 @@
   }
 }
 
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 132px 36px 0 36px;
+  box-sizing: border-box;
+  position: relative;
+
+  @include tablet {
+    flex-direction: column;
+    margin-bottom: 21px;
+  }
+}
+
+.product__image {
+  width: 50%;
+
+  @include tablet {
+    width: 100%;
+    position: absolute;
+    bottom: 192px;
+    left: 0;
+  }
+}
+
 .product__content {
-  margin-bottom: 13px;
+  width: 50%;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .product__name {
+  width: 76px;
+  margin-top: 10px;
+  margin-bottom: 18px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $catalog-grey;
-  margin: 0;
 
   @include tablet {
     font-size: 20px;
     line-height: 24px;
+    width: 166px;
+    text-align: center;
+    margin: 30px auto;
   }
 
   @include desktop {
@@ -56,6 +97,9 @@
 
   @include tablet {
     font-size: 16px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $grey-line-small;
+    margin-bottom: 7px;
   }
 }
 
@@ -68,4 +112,8 @@
   padding: 10px 0;
   color: $basic-white;
   background-color: $basic-green;
+
+  @include tablet {
+    width: calc(100% - 72px);
+  }
 }

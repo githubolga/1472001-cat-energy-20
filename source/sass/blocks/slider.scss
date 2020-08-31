@@ -9,12 +9,14 @@
   @include reset-ul;
   display: flex;
   align-items: center;
+  padding: 0 0 27px;
 }
 
 .slider__buttons {
   display: flex;
   justify-content: space-between;
   width: 230px;
+  margin-bottom: 25px;
 }
 
 .slider__button {
@@ -22,6 +24,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 6px 10px;
 
   @include tablet {
     font-size: 20px;
