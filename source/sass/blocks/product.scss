@@ -1,7 +1,6 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 14px;
   border-bottom: 1px solid $grey-line;
   width: 100%;
   padding-bottom: 30px;
@@ -11,19 +10,29 @@
     flex-direction: column;
     align-items: center;
     width: calc(50% - 30px);
-    padding-bottom: 40px;
+    padding-bottom: 37px;
     box-sizing: border-box;
-    margin-bottom: 130px;
-    border-bottom: none;
+    margin-bottom: 60px;
     margin-right: 60px;
+    border-bottom: none;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       margin-right: 0;
     }
   }
 
   @include desktop {
-    width: 25%;
+    width: calc(25% - 51px);
+    margin-right: 80px;
+    margin-bottom: 145px;
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -31,13 +40,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 132px 36px 0 36px;
   box-sizing: border-box;
   position: relative;
 
   @include tablet {
     flex-direction: column;
-    margin-bottom: 21px;
+    padding: 161px 30px 33px 35px;
   }
 }
 
@@ -47,8 +55,13 @@
   @include tablet {
     width: 100%;
     position: absolute;
-    bottom: 192px;
-    left: 0;
+    bottom: 215px;
+    right: 4px;
+  }
+
+  @include desktop {
+    bottom: 223px;
+    right: -6px;
   }
 }
 
@@ -61,8 +74,8 @@
 }
 
 .product__name {
-  width: 76px;
-  margin-top: 10px;
+  width: 77px;
+  margin-top: 15px;
   margin-bottom: 18px;
   font-size: 16px;
   line-height: 20px;
@@ -74,7 +87,7 @@
     line-height: 24px;
     width: 166px;
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto 24px;
   }
 
   @include desktop {
@@ -100,6 +113,14 @@
     padding-bottom: 7px;
     border-bottom: 1px solid $grey-line-small;
     margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include desktop {
+    margin-bottom: 9px;
   }
 }
 

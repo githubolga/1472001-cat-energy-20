@@ -1,8 +1,7 @@
-.catalog {
+.catalog__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
 
   @include tablet {
     flex-direction: row;
@@ -16,8 +15,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-bottom: 41px;
-  padding-top: 27px;
+  padding: 27px 30px 41px;
   text-align: center;
   border-bottom: 1px solid $grey-line;
   border-top: 1px solid $grey-line;
@@ -26,8 +24,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    padding-bottom: 160px;
-    padding-top: 15px;
+    padding: 26px 30px 160px 30px;
     border-bottom: none;
     border-top: none;
   }

@@ -10,7 +10,7 @@
   }
 
   @include desktop {
-    padding: 53px 110px 111px 110px;
+    padding: 53px 30px 74px 30px;
   }
 }
 
@@ -23,6 +23,10 @@
 
   &:active {
     opacity: 60%;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
   }
 }
 
