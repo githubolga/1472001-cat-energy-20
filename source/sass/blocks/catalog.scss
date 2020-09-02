@@ -19,6 +19,7 @@
   text-align: center;
   border-bottom: 1px solid $grey-line;
   border-top: 1px solid $grey-line;
+  box-sizing: border-box;
 
   @include tablet {
     font-size: 60px;

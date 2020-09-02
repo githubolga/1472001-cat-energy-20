@@ -6,7 +6,11 @@
   position: relative;
 
   @include tablet {
-    padding: 10px 30px 69px;
+    padding: 0 30px 69px;
+  }
+
+  @include desktop {
+    padding-bottom: 86px;
   }
 }
 
@@ -17,6 +21,7 @@
   margin: 0;
   padding-bottom: 35px;
   border-bottom: 1px solid $grey-line-small;
+  box-sizing: border-box;
 
   @include tablet {
     font-size: 36px;
@@ -25,22 +30,29 @@
     border-bottom: none;
     padding-bottom: 80px;
   }
+
+  @include desktop {
+    padding-bottom: 80px;
+  }
 }
 
 .catalog-add__wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
 
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
-    padding: 86px 110px 85px 110px;
   }
 }
 
 .catalog-add__list {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
+  @include desktop {
+    width: 70%;
+  }
 }

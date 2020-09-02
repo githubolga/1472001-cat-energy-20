@@ -66,6 +66,14 @@
   text-transform: uppercase;
   color: $basic-black;
 
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @include tablet {
     font-weight: 400;
     font-size: 18px;
@@ -84,5 +92,15 @@
     &--active {
       border-bottom: 2px solid $basic-white;
     }
+
+    &--black {
+      color: $catalog;
+    }
+  }
+}
+
+.main-menu__link--black.main-menu__link--active {
+  @include desktop {
+    border-bottom: 2px solid $basic-green;
   }
 }

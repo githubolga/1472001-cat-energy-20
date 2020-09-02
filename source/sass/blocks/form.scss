@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0;
 
   @include tablet {
     padding: 0 70px;
@@ -26,6 +26,10 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+  padding: 27px 20px 37px;
+  border-top: 1px solid $grey-fieldset;
+  box-sizing: border-box;
+  width: 100%;
 
   @include tablet {
     font-size: 60px;
@@ -37,6 +41,8 @@
   text-transform: uppercase;
   margin: 0;
   width: 230px;
+  padding-bottom: 37px;
+  padding-left: 20px;
 
   @include tablet {
     font-size: 20px;
@@ -51,7 +57,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-grey;
-  padding: 0;
+  padding: 0 0 26px 20px;
   margin: 0;
   border: 0;
   // border-bottom: 1px solid $grey-fieldset;
@@ -76,6 +82,15 @@
 .form__fieldset--bio,
 .form__fieldset--programm {
   border-bottom: 1px solid $grey-fieldset;
+  padding: 21px 0 21px 20px;
+
+    &:before {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $grey-line-small;
+    }
+  }
 
   @include desktop {
     width: 50%;
