@@ -84,13 +84,6 @@
   border-bottom: 1px solid $grey-fieldset;
   padding: 21px 0 21px 20px;
 
-    &:before {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid $grey-line-small;
-    }
-  }
 
   @include desktop {
     width: 50%;
@@ -125,7 +118,7 @@
   padding: 10px 20px;
   transition: border-color 0.3s linear;
   outline: 0;
-
+  width: 100%;
 
   &:hover {
     border-color: $grey-line-small;

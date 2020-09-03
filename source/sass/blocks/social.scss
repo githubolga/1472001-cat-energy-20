@@ -38,3 +38,10 @@
   fill: #666666;
   transition: all 0.3s linear;
 }
+
+.social__icon-vk {
+  @include tablet {
+    width: 29px;
+    height: 17px;
+  }
+}
