@@ -18,9 +18,12 @@
         </picture>
       </a>
       <button class="header__burger js-menu-button" type="button">
-        <span></span>
-        <span></span>
-        <span></span>
+        <svg class="header__burger-icon header__burger-icon--open" width="24" height="19">
+          <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+        </svg>
+        <svg class="header__burger-icon header__burger-icon--close" width="18" height="18">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
       </button>
       <nav class="main-menu js-menu no-js">
         <ul class="main-menu__list">
@@ -147,7 +150,7 @@
           <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="contact__map" id="map">
+        <div class="contact__map js-map" id="map">
           <img src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
         </div>
       </section>
@@ -156,38 +159,40 @@
     <footer class="footer">
       <div class="footer__logo">
         <a class="footer__link" href="index.html">
-          <svg class="footer__svg" width="128" height="24">
+          <svg class="footer__icon" width="128" height="24">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
       </div>
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="В_контакте">
-            <svg class="social__icon social__icon-vk" width="22" height="12">
+          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="В_контакте">
+            <svg class="social__icon social__icon--vk" width="22" height="12">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Инстаграм">
-            <svg class="social__icon social__icon-insta" width="16" height="16">
+          <a class="social__link" href="https://instagram.com/htmlacademy" aria-label="Инстаграм">
+            <svg class="social__icon social__icon--insta" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Фейсбук">
-            <svg class="social__icon social__icon-fb" width="10" height="19">
+          <a class="social__link" href="https://facebook.com/htmlacademy" aria-label="Фейсбук">
+            <svg class="social__icon social__icon--fb" width="10" height="19">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__logo" href="https://htmlacademy.ru">
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <h3 class="copyright__text">HTML Academy</h3>
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>

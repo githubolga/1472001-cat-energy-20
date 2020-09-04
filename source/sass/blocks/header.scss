@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 11px 20px 0 20px;
+  margin-bottom: 16px;
 
   @include tablet {
     padding: 17px 30px 29px 30px;
@@ -15,8 +16,6 @@
 }
 
 .header__logo {
-  margin-bottom: 16px;
-
   &:hover {
     opacity: 80%;
   }
@@ -34,22 +33,14 @@
   @include reset-button;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
-
-  & span {
-    width: 24px;
-    height: 2px;
-    background-color: $basic-black;
-    margin-bottom: 5px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 
   @include tablet {
     display: none;
   }
+}
+
+.header__burger-icon--close {
+  display: none;
 }
 
 .header__burger.m-show {

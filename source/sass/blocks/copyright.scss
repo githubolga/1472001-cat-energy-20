@@ -1,22 +1,40 @@
 .copyright {
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    width: 36%;
+  }
+}
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 22px 0;
 
-  @include tablet {
-    width: 33%;
+  &:active {
+    opacity: 0.3;
   }
+
+  .copyright__link {
+    &:hover .copyright__icon {
+      color: $basic-green;
+    }
+  }
+
+  // &:hover .copyright__link {
+  //   fill: $basic-green;
+  // }
 }
 
 .copyright__text {
   font-size: 16px;
   font-family: $font-arial;
   color: $basic-grey;
-  margin: 0;
 
   @include tablet {
     line-height: 18px;
+    margin-right: 16px;
   }
 }

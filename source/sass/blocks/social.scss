@@ -39,9 +39,23 @@
   transition: all 0.3s linear;
 }
 
-.social__icon-vk {
+.social__icon--vk {
   @include tablet {
     width: 29px;
     height: 17px;
+  }
+}
+
+.social__icon--insta {
+  @include tablet {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon--fb {
+  @include tablet {
+    width: 13px;
+    height: 27px;
   }
 }

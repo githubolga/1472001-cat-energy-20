@@ -1,6 +1,6 @@
 .footer {
   background-color: $background-grey;
-  padding: 40px 20px 22px 20px;
+  padding: 40px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,23 +18,24 @@
   }
 }
 
-.footer__link {
-  &:hover .footer__svg {
-    opacity: 0.8;
-  }
-
-  .footer__link {
-    &:active .footer__svg {
-      opacity: 0.6;
-    }
-  }
-}
-
 .footer__logo {
   padding-bottom: 32px;
+  fill: $dark-grey;
 
   @include tablet {
     align-items: center;
     padding-bottom: 0;
+  }
+}
+
+.footer__link {
+  &:hover .footer__icon {
+    opacity: 0.8;
+  }
+
+  .footer__link {
+    &:active .footer__icon {
+      opacity: 0.6;
+    }
   }
 }
