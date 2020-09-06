@@ -103,14 +103,21 @@
   @include tablet {
     width: 140px;
     height: 192px;
-    left: 30px;
-    bottom: 16px;
+    left: 35px;
+    bottom: 15px;
   }
 }
 
 .category__icon--pro {
   left: -9px;
   bottom: 11px;
+
+  @include tablet {
+    width: 140px;
+    height: 192px;
+    left: 35px;
+    bottom: 15px;
+  }
 }
 
 .category__text {
@@ -147,7 +154,6 @@
   transition: 0.3s;
   margin-right: 10px;
   position: relative;
-  width: 87px;
 
   &::after {
     content: "";
@@ -157,7 +163,6 @@
     // width: 24px;
     // height: 11px;
     background: url (../img/icon-right-arrow-verylong.svg) no-repeat;
-    background-color: red;
   }
 
   @include tablet {
