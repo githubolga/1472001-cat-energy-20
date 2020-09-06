@@ -21,12 +21,12 @@
 
 .category__item {
   background-color: $background-grey;
-  padding: 30px 30px 20px 20px;
+  padding: 30px 20px 20px 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  position: relative;
   box-sizing: border-box;
+  position: relative;
 
   @include tablet {
     padding: 77px 60px 53px 52px;
@@ -70,6 +70,7 @@
 .category__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   color: $basic-black;
@@ -89,6 +90,27 @@
     text-align: center;
     margin-bottom: 73px;
   }
+}
+
+.category__icon {
+  position: absolute;
+}
+
+.category__icon--slim {
+  left: 8px;
+  bottom: 2px;
+
+  @include tablet {
+    width: 140px;
+    height: 192px;
+    left: 30px;
+    bottom: 16px;
+  }
+}
+
+.category__icon--pro {
+  left: -9px;
+  bottom: 11px;
 }
 
 .category__text {
@@ -120,6 +142,23 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
+  background: #f2f2f2;
+  z-index: 1;
+  transition: 0.3s;
+  margin-right: 10px;
+  position: relative;
+  width: 87px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    // top: 2px;
+    // left: 98px;
+    // width: 24px;
+    // height: 11px;
+    background: url (../img/icon-right-arrow-verylong.svg) no-repeat;
+    background-color: red;
+  }
 
   @include tablet {
     font-size: 20px;
