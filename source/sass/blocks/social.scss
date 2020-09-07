@@ -12,6 +12,10 @@
     border-bottom: none;
     border-top: none;
   }
+
+  @include desktop {
+    padding-left: 138px;
+  }
 }
 
 .social__item {
@@ -19,6 +23,10 @@
 
   @include tablet {
     margin-right: 25px;
+  }
+
+  @include desktop {
+    margin-right: -8px;
   }
 }
 
