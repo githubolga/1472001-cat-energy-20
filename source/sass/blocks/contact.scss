@@ -9,8 +9,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 28px 19px 22px 19px;
+  padding: 28px 19px 26px 19px;
   background: $background-grey;
+
+  &--white {
+    background: $basic-white;
+  }
 
   @include tablet {
     padding: 65px 72px 58px 71px;
@@ -23,6 +27,7 @@
     top: 95px;
     left: 110px;
     background: $basic-white;
+    z-index: 1;
   }
 }
 
@@ -60,5 +65,13 @@
 .contact__map {
   width: 100%;
   display: flex;
-  align-items: stretch;
+  height: 362px;
+
+  @include tablet {
+    height: 400px;
+  }
+}
+
+.contact.map-show .contact__img {
+  display: none;
 }

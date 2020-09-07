@@ -49,11 +49,13 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  top: 21px;
+  top: 25px;
+  left: 22px;
   background: $basic-green;
 
   @include tablet {
-    right: 60px;
+    right: 47px;
+    left: auto;
     top: 91px;
     width: 200px;
     height: 200px;
@@ -143,7 +145,7 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-fieldset;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @include tablet {
     font-size: 16px;

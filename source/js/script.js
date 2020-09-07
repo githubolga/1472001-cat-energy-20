@@ -29,11 +29,11 @@ function map () {
       controls: ["zoomControl"]
   });
   var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-    hintContent: "Nerds 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8"
+    hintContent: "Cat Energy 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8"
   }, {
     iconLayout: "default#image",
-    iconImageHref: "./img/map-marker.png",
-    iconImageSize: [231, 190]
+    iconImageHref: "./../img/map-pin.png",
+    iconImageSize: [124, 106]
   });
   myMap.behaviors.disable("scrollZoom");
   myMap.geoObjects.add(myPlacemark);

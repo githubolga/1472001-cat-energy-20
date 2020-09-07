@@ -35,7 +35,7 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  padding: 27px 20px 0 20px;
+  padding: 7px 20px 0 20px;
   width: 100%;
   box-sizing: border-box;
 
@@ -45,6 +45,7 @@
     margin-bottom: 63px;
     padding: 0 30px;
   }
+
   @include desktop {
     padding-left: 0;
     padding-top: 68px;
@@ -84,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
   width: 100%;
 }
 
@@ -132,7 +133,9 @@
 }
 
 .example__title-small {
+  font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   margin: 0;

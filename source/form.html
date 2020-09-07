@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="./css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=75dd7812-1592-480a-add1-2fe184f916b1" type="text/javascript"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
@@ -125,16 +126,17 @@
         </div>
       </form>
 
-      <section class="contact">
+      <section class="contact js-map">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contact__info">
-          <h3 class="contact__title">приглашаем к сотрудничеству дилеров!</h3>
+        <div class="contact__info contact__info--white">
+          <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contact__map" id="map">
-          <img src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+          <img class="contact__img" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
         </div>
       </section>
+
     </main>
 
     <footer class="footer">

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="./css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=75dd7812-1592-480a-add1-2fe184f916b1" type="text/javascript"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
@@ -144,28 +145,39 @@
           <div class="slider__wrapper">
             <ul class="slider__list">
               <li class="slider__item m-current">
-                <img class="slider__image" src="https://via.placeholder.com/311x232" width="311" height="232" alt="cat before">
+                <picture class="slider__pics">
+                  <source media="(min-width: 1240px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="cat before">
+                </picture>
               </li>
-              <li class="slider__item visually-hidden">
-                <img class="slider__image" src="https://via.placeholder.com/311x232" width="311" height="232" alt="cat after">
+              <li class="slider__item">
+                <picture class="slider__pics">
+                  <source media="(min-width: 1240px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="cat after">
+                </picture>
               </li>
             </ul>
           </div>
           <div class="slider__buttons">
             <button class="slider__button" type="button">Было</button>
+            <div class="slider__scale">
+              <span class="slider__bar"></span>
+            </div>
             <button class="slider__button" type="button">Стало</button>
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact js-map">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contact__info">
+        <div class="contact__info contact__info--white">
           <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="contact__map js-map" id="map">
-          <img src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <div class="contact__map" id="map">
+          <img class="contact__img" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
         </div>
       </section>
     </main>

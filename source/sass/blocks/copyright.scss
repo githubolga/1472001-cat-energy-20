@@ -1,6 +1,6 @@
 .copyright {
   width: 100%;
-  padding-top: 28px;
+  padding-top: 13px;
   padding-bottom: 32px;
 
   @include tablet {
@@ -37,4 +37,10 @@
     line-height: 18px;
     margin-right: 16px;
   }
+}
+
+.copyright__icon {
+  width: 41px;
+  height: 43px;
+  flex-shrink: 0;
 }

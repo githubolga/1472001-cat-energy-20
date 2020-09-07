@@ -45,19 +45,11 @@
 }
 
 .header__burger.m-show {
-  & span {
-    margin-bottom: 0;
+  & .header__burger-icon--close {
+    display: block;
+  }
 
-    &:nth-child(3) {
-      display: none;
-    }
-
-    &:nth-child(1) {
-      transform: rotate(45deg);
-    }
-
-    &:nth-child(2) {
-      transform: rotate(-45deg);
-    }
+  & .header__burger-icon--open {
+    display: none;
   }
 }

@@ -4,7 +4,7 @@
   justify-content: center;
   border-bottom: 1px solid $grey-fieldset;
   border-top: 1px solid $grey-fieldset;
-  padding: 20px 0 21px 0;
+  padding: 20px 0;
   width: 100%;
   align-items: center;
 
@@ -15,7 +15,7 @@
 }
 
 .social__item {
-  margin-right: 35px;
+  margin-right: -7px;
 
   @include tablet {
     margin-right: 25px;
