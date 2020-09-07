@@ -38,7 +38,7 @@
   }
 
   @include desktop {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 57px 52px;
     width: calc(50% - 40px);
     margin-bottom: 0;
   }
@@ -89,6 +89,7 @@
   @include desktop {
     text-align: center;
     margin-bottom: 73px;
+    margin-left: 26px;
   }
 }
 
@@ -106,6 +107,13 @@
     left: 29px;
     bottom: 15px;
   }
+
+  @include desktop {
+    width: 70px;
+    height: 97px;
+    left: 15px;
+    bottom: 9px;
+  }
 }
 
 .category__icon--pro {
@@ -117,6 +125,13 @@
     height: 112px;
     left: -38px;
     bottom: 46px;
+  }
+
+  @include desktop {
+    width: 134px;
+    height: 56px;
+    left: -18px;
+    bottom: 24px;
   }
 }
 
@@ -140,7 +155,7 @@
 
   @include desktop {
     width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 5px;
   }
 }
 
@@ -163,7 +178,6 @@
   transition: 0.3s;
   padding: 0 14px 0 0;
   margin: 0;
-  // width: 87px;
   position: relative;
 
   @include tablet {
@@ -184,10 +198,10 @@
   }
 
   @include tablet {
-    left: 166px;
+    left: 180px;
 
     &:hover {
-      left: 172px;
+      left: 186px;
       transition: 0.3s;
     }
   }

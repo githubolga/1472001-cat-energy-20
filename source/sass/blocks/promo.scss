@@ -26,6 +26,7 @@
   }
 
   @include desktop {
+    margin-bottom: 0;
     &::before {
       display: block;
       content: "";
@@ -34,8 +35,9 @@
       z-index: -1;
       height: 696px;
       width: 50%;
-      top: -242px;
+      top: -226px;
       right: 0;
+
     }
   }
 }
@@ -52,7 +54,9 @@
   }
 
   @include desktop {
-    padding: 0 80px;
+    padding: 0 0 23px 193px;
+    height: 530px;
+    margin: 0;
   }
 }
 
@@ -114,8 +118,8 @@
   }
 
   @include desktop {
-    left: 478px;
-    top: -359px;
+    left: 364px;
+    top: -367px;
     width: 552px;
     height: 499px;
     margin-bottom: 0;
@@ -138,6 +142,10 @@
     padding: 14px 26px;
     margin: 0;
     font-size: 20px;
+
+  @include desktop {
+    padding: 17px 26px;
+  }
 
     &:hover {
       background-color: $basic-green2;
