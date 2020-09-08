@@ -19,6 +19,7 @@
   @include tablet {
     background-image: none;
     background-color: transparent;
+    margin-bottom: 495px;
 
     &::before {
       display: none;
@@ -26,7 +27,7 @@
   }
 
   @include desktop {
-    margin-bottom: 244px;
+    margin-bottom: 210px;
 
     &::before {
       display: block;
@@ -54,7 +55,7 @@
   }
 
   @include desktop {
-    padding: 0 0 23px 193px;
+    padding: 0 0 0 193px;
     margin: 0;
   }
 }
@@ -109,8 +110,8 @@
   @include tablet {
     position: absolute;
     z-index: -1;
-    top: -75px;
-    left: -87px;
+    top: 175px;
+    left: 45px;
     width: 709px;
     height: 609px;
     order: 4;

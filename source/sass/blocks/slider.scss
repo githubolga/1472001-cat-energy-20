@@ -5,7 +5,7 @@
   background: $grey;
 
   @include tablet {
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background: linear-gradient(to right, $background-grey 50%, $grey 50%);
   }
 }
 
@@ -22,7 +22,7 @@
   padding: 0 0 22px;
 
   @include tablet {
-    min-height: 400px;
+    min-height: 384px;
     position: relative;
     width: 100%;
   }
@@ -38,19 +38,8 @@
   @include tablet {
     position: absolute;
     width: 100%;
-    left: 0;
     text-align: center;
-    top: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: $grey;
-      width: 50%;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
+    bottom: 66px;
   }
 }
 
@@ -58,7 +47,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 217px;
   margin-bottom: 30px;
 }
 
@@ -67,11 +55,12 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 6px 0;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted $grey-fieldset;
   }
 }
 
@@ -82,14 +71,49 @@
   border-radius: 50px;
   background: $basic-white;
   position: relative;
+  cursor: pointer;
+  margin: 0 17px;
+
+  @include tablet {
+    width: 428px;
+    height: 6px;
+    margin: 0 25px;
+    background: $grey-fieldset;
+  }
 }
 
 .slider__bar {
   width: 35px;
   height: 6px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: $basic-green;
   top: 3px;
   left: 9px;
   position: absolute;
+  cursor: pointer;
+
+  @include tablet {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $basic-white;
+    border: 1px solid $grey-fieldset;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    top: -14px;
+    left: 199px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: $basic-green;
+      margin: auto;
+    }
+  }
 }
