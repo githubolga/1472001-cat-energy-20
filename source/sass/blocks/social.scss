@@ -11,9 +11,6 @@
   @include tablet {
     border-bottom: none;
     border-top: none;
-  }
-
-  @include desktop {
     padding: 0;
   }
 }

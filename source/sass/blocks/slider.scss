@@ -22,9 +22,10 @@
   padding: 0 0 22px;
 
   @include tablet {
-    min-height: 384px;
+    min-height: 354px;
     position: relative;
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -39,7 +40,13 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 66px;
+    bottom: 4px;
+    left: 7px;
+  }
+
+  @include desktop {
+    bottom: 23px;
+    left: 13px;
   }
 }
 
@@ -47,7 +54,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
+
+  @include desktop {
+    margin-left: 78px;
+  }
 }
 
 .slider__button {

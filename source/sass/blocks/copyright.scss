@@ -2,7 +2,7 @@
   width: 100%;
 
   @include tablet {
-    width: 36%;
+    width: 38%;
   }
 }
 
@@ -30,11 +30,9 @@
 
   @include tablet {
     line-height: 18px;
-    margin-right: 16px;
   }
 
   @include desktop {
-    margin-right: 0;
     margin-left: 87px;
   }
 }

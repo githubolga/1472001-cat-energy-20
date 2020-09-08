@@ -66,8 +66,9 @@
 
   @include desktop {
     width: 25%;
-    max-width: 250px;
+    max-width: 230px;
     margin-bottom: 0;
+    padding: 0;
     align-items: flex-start;
 
     &:nth-last-child(-n+2) {

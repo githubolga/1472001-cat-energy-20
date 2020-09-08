@@ -27,7 +27,7 @@
   }
 
   @include desktop {
-    margin-bottom: 210px;
+    margin-bottom: 267px;
 
     &::before {
       display: block;
@@ -37,8 +37,8 @@
       z-index: -1;
       height: 696px;
       width: 50%;
-      top: -226px;
-      right: 0;
+      top: -228px;
+      right: 5px;
     }
   }
 }
@@ -55,7 +55,7 @@
   }
 
   @include desktop {
-    padding: 0 0 0 193px;
+    padding: 0 0 0 186px;
     margin: 0;
   }
 }
@@ -77,6 +77,10 @@
     width: 450px;
     padding: 0;
     margin-bottom: 41px;
+  }
+
+  @include desktop {
+    margin-bottom: 37px;
   }
 }
 
@@ -118,8 +122,8 @@
   }
 
   @include desktop {
-    left: 558px;
-    top: -82px;
+    left: 554px;
+    top: -85px;
     width: 552px;
     height: 499px;
     margin-bottom: 0;
@@ -150,9 +154,5 @@
     padding: 18px 26px;
     margin: 0;
     font-size: 20px;
-  }
-
-  @include desktop {
-    padding: 17px 26px;
   }
 }

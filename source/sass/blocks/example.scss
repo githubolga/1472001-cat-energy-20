@@ -22,14 +22,15 @@
   box-sizing: border-box;
 
   @include tablet {
-    padding: 43px 30px 33px 30px;
-    margin-bottom: 210px;
+    padding: 22px 37px 33px 30px;
+    margin-bottom: 222px;
   }
 
   @include desktop {
     width: 40%;
     background-color: $background-grey;
-    padding: 70px 30px 43px 110px;
+    padding: 70px 30px 74px 110px;
+    margin-bottom: 0;
   }
 }
 
@@ -47,7 +48,8 @@
   }
 
   @include desktop {
-    margin: 70px 0 77px 111px;
+    width: 100%;
+    margin: -3px 0 77px 111px;
   }
 }
 
@@ -60,6 +62,10 @@
   @include tablet {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @include desktop {
+    padding-bottom: 68px;
   }
 }
 
@@ -94,7 +100,7 @@
   }
 
   @include desktop {
-    padding-bottom: 52px;
+    padding-bottom: 57px;
   }
 }
 
@@ -109,7 +115,7 @@
 
   @include tablet {
     width: 162px;
-    padding: 16px 0;
+    padding: 18px 0;
   }
 }
 
@@ -121,8 +127,9 @@
   flex-direction: column;
 
   @include tablet {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 37px;
+    text-transform: uppercase;
   }
 
   @include desktop {
@@ -146,8 +153,8 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
-    top: 60px;
-    left: 18px;
+    top: 65px;
+    left: 15px;
     width: 128px;
   }
 
@@ -166,12 +173,14 @@
 
   @include tablet {
     font-size: 20px;
-    text-align: right;
+    text-align: left;
+    margin-left: 118px;
   }
 
   @include desktop {
     width: 100%;
     text-align: left;
+    margin-left: 0;
   }
 }
 

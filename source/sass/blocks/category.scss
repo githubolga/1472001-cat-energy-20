@@ -38,7 +38,7 @@
   }
 
   @include desktop {
-    padding: 77px 51px 57px 52px;
+    padding: 77px 51px 59px 52px;
     width: calc(50% - 40px);
     margin-bottom: 0;
   }
@@ -94,8 +94,16 @@
     margin-left: 26px;
   }
 }
+
 .category__title--pro {
-  margin-bottom: 27px;
+  @include tablet {
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    margin-bottom: 74px;
+    margin-left: 61px;
+  }
 }
 
 .category__icon {
@@ -161,12 +169,17 @@
 
   @include desktop {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 24px;
   }
 }
+
 .category__text--pro {
   @include tablet {
     width: calc(100% - 256px);
+  }
+
+  @include desktop {
+    width: calc(100% - 21px);
   }
 }
 
