@@ -8,8 +8,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 60px 43px 60px;
+  padding: 60px 39px 43px;
   box-sizing: border-box;
+  align-self: stretch;
 
   @include tablet {
     flex-direction: row;
@@ -20,8 +21,8 @@
     background-image: url("../img/gift-photo-desktop.jpg");
     flex-direction: column;
     margin-left: 79px;
-    height: 100%;
-    width: 30%;
+    height: auto;
+    width: 245px;
   }
 }
 

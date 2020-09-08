@@ -1,4 +1,6 @@
 .catalog-add {
+  max-width: 1220px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +12,7 @@
   }
 
   @include desktop {
-    padding-bottom: 86px;
+    padding: 0 0 86px 0;
   }
 }
 

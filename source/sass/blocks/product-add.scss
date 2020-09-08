@@ -29,7 +29,7 @@
   @include desktop {
     border-right: 0;
     border-left: 0;
-    padding: 25px 0 28px 0;
+    padding: 15px 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -40,6 +40,7 @@
 .product-add__title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   color: $catalog-grey;
   margin: 0 0 13px 0;

@@ -14,25 +14,19 @@
   }
 
   @include desktop {
-    padding-left: 138px;
+    padding: 0;
   }
 }
 
 .social__item {
-  margin-right: -7px;
+  margin-right: 36px;
 
-  @include tablet {
-    margin-right: 25px;
-  }
-
-  @include desktop {
-    margin-right: -8px;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .social__link {
-  margin-right: 36px;
-
   &:hover .social__icon {
     fill: $basic-green;
   }

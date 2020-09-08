@@ -1,7 +1,5 @@
 .copyright {
   width: 100%;
-  padding-top: 13px;
-  padding-bottom: 32px;
 
   @include tablet {
     width: 36%;
@@ -12,26 +10,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: $basic-grey;
+  margin: 0;
+
+  &:hover .copyright__icon {
+    fill: $basic-green;
+  }
 
   &:active {
     opacity: 0.3;
   }
-
-  .copyright__link {
-    &:hover .copyright__icon {
-      color: $basic-green;
-    }
-  }
-
-  // &:hover .copyright__link {
-  //   fill: $basic-green;
-  // }
 }
 
 .copyright__text {
   font-size: 16px;
   font-family: $font-arial;
   color: $basic-grey;
+  font-weight: 400;
 
   @include tablet {
     line-height: 18px;
@@ -47,5 +42,5 @@
 .copyright__icon {
   width: 41px;
   height: 43px;
-  flex-shrink: 0;
+  fill: red;
 }
