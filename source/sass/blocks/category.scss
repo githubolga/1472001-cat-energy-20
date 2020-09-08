@@ -29,8 +29,8 @@
   position: relative;
 
   @include tablet {
-    padding: 77px 60px 53px 52px;
-    margin-bottom: 30px;
+    padding: 77px 60px 56px 52px;
+    margin-bottom: 31px;
 
     &:last-child {
       margin-bottom: 0;
@@ -54,7 +54,7 @@
   background: $basic-green;
 
   @include tablet {
-    right: 47px;
+    right: 61px;
     left: auto;
     top: 91px;
     width: 200px;
@@ -94,6 +94,9 @@
     margin-left: 26px;
   }
 }
+.category__title--pro {
+  margin-bottom: 27px;
+}
 
 .category__icon {
   position: absolute;
@@ -107,7 +110,7 @@
     width: 140px;
     height: 192px;
     left: 29px;
-    bottom: 15px;
+    bottom: 17px;
   }
 
   @include desktop {
@@ -125,8 +128,8 @@
   @include tablet {
     width: 268px;
     height: 112px;
-    left: -38px;
-    bottom: 46px;
+    left: -36px;
+    bottom: 44px;
   }
 
   @include desktop {
@@ -150,14 +153,20 @@
   @include tablet {
     font-size: 16px;
     line-height: 24px;
-    width: calc(100% - 210px);
+    width: calc(100% - 212px);
     border-bottom: none;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
+    padding: 0;
   }
 
   @include desktop {
     width: 100%;
     margin-bottom: 5px;
+  }
+}
+.category__text--pro {
+  @include tablet {
+    width: calc(100% - 256px);
   }
 }
 
@@ -178,7 +187,7 @@
   background: $background-grey;
   z-index: 1;
   transition: 0.3s;
-  padding: 0 14px 0 0;
+  padding: 0 25px 0 0;
   margin: 0;
   position: relative;
 
@@ -200,7 +209,7 @@
   }
 
   @include tablet {
-    left: 180px;
+    left: 178px;
 
     &:hover {
       left: 186px;

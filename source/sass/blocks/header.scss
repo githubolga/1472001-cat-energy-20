@@ -1,20 +1,20 @@
 .header {
-  max-width: 1220px;
-  margin: 0 auto 16px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 11px 20px 0 20px;
+  margin: 0 auto 16px auto;
 
 
   @include tablet {
-    padding: 17px 30px 29px 30px;
+    margin: 17px 30px 50px 30px;
+    padding: 0;
   }
 
   @include desktop {
-    padding: 46px 0 101px 0;
-    margin-bottom: 0;
+    max-width: 1220px;
+    margin: 46px 0 101px 0;
   }
 }
 

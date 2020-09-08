@@ -19,7 +19,7 @@
   @include tablet {
     background-image: none;
     background-color: transparent;
-    margin-bottom: 495px;
+    margin-bottom: 526px;
 
     &::before {
       display: none;
@@ -50,7 +50,7 @@
 
   @include tablet {
     position: relative;
-    padding: 0 117px;
+    padding: 0 113px;
     align-items: flex-start;
   }
 
@@ -110,8 +110,8 @@
   @include tablet {
     position: absolute;
     z-index: -1;
-    top: 175px;
-    left: 45px;
+    top: 200px;
+    left: 29px;
     width: 709px;
     height: 609px;
     order: 4;
@@ -147,7 +147,7 @@
   @include tablet {
     order: 3;
     width: auto;
-    padding: 14px 26px;
+    padding: 18px 26px;
     margin: 0;
     font-size: 20px;
   }
