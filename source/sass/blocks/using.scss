@@ -44,6 +44,7 @@
 
   @include desktop {
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 }
 
@@ -91,10 +92,14 @@
     margin-bottom: 0;
     padding: 0;
     align-items: flex-start;
-    margin-right: 77px;
+    margin-right: 80px;
 
     &:nth-child(odd) {
-      margin-right: 77px;
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
 
     &:nth-last-child(-n+2) {
