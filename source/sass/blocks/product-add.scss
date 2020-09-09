@@ -88,6 +88,14 @@
   background-color: $basic-green;
   padding: 10px 0;
 
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
   @include desktop {
     width: 30%;
   }

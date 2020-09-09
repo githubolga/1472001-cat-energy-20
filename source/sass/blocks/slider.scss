@@ -72,6 +72,14 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $grey-fieldset;
+
+    &:hover {
+      border-bottom: 1px solid $basic-black;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -112,6 +120,10 @@
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
     top: -14px;
     left: 199px;
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
 
     &::after {
       content: "";

@@ -7,6 +7,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px 0;
+  position: relative;
 
   @include tablet {
     border: 2px solid $background-grey;
@@ -26,6 +27,7 @@
 .catalog-more__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: $dark-grey;
@@ -62,4 +64,33 @@
   color: $basic-grey;
   background-color: $background-grey;
   padding: 10px 0;
+
+  &:hover {
+    background-color: $grey-line;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 126px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    fill: $grey-plus;
+    opacity: 0.3;
+    background: url("../img/icon-plus-mobile.svg") no-repeat center;
+
+    @include tablet {
+      background: url("../img/icon-plus.svg");
+      width: 60px;
+      height: 60px;
+      bottom: 326px;
+    }
+  }
 }
