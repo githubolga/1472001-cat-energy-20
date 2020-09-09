@@ -1,9 +1,8 @@
 .catalog-add {
   max-width: 1220px;
-  margin: 0 auto;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
   position: relative;
 
   @include tablet {
@@ -55,6 +54,7 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+  padding-bottom: 34px;
 
   @include desktop {
     flex-direction: row;
