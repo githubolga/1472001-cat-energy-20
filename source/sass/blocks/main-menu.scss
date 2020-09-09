@@ -27,13 +27,17 @@
 
 .main-menu__item {
   border-bottom: 1px solid $grey-menu;
-  padding-bottom: 24px;
-  padding-top: 22px;
+  padding-bottom: 23px;
+  padding-top: 21px;
   width: 100%;
   text-align: center;
 
   &:first-child {
     border-top: 1px solid $grey-menu;
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 
   &:hover {

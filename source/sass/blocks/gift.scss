@@ -26,10 +26,15 @@
   }
 }
 
+.gift__icon {
+  fill: $basic-white;
+}
+
 .gift__text {
   font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $basic-white;
   text-align: center;
   margin: 0;

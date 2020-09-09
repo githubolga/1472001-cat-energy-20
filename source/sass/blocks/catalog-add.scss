@@ -3,8 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px 20px 35px;
+  margin: 0 20px;
   position: relative;
 
   @include tablet {
@@ -17,13 +16,26 @@
 }
 
 .catalog-add__title {
-  width: 100%;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
+  padding-top: 30px;
   border-bottom: 1px solid $grey-line-small;
   box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    background: $basic-green;
+    z-index: -1;
+  }
 
   @include tablet {
     font-size: 36px;

@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 11px 20px 0 20px;
-  margin: 0 auto 16px auto;
+  margin: 10px auto 16px auto;
 
 
   @include tablet {
@@ -19,6 +18,9 @@
 }
 
 .header__logo {
+  padding-bottom: 13px;
+  padding-left: 19px;
+
   &:hover {
     opacity: 80%;
   }
@@ -33,6 +35,7 @@
 }
 
 .header__burger {
+
   @include reset-button;
   display: flex;
   flex-direction: column;
@@ -44,6 +47,8 @@
 
 .header__burger-icon--close {
   display: none;
+  padding-right: 23px;
+  padding-bottom: 10px;
 }
 
 .header__burger.m-show {
