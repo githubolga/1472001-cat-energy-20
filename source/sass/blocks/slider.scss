@@ -59,10 +59,6 @@
   @include tablet {
     margin-bottom: 64px;
   }
-
-  @include desktop {
-    margin-left: 78px;
-  }
 }
 
 .slider__button {
@@ -100,7 +96,7 @@
 .slider__bar {
   width: 35px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: 50px;
   background: $basic-green;
   top: 3px;
   left: 9px;
