@@ -38,7 +38,7 @@
       height: 696px;
       width: 50%;
       top: -228px;
-      right: 5px;
+      right: 0;
     }
   }
 }
@@ -55,7 +55,7 @@
   }
 
   @include desktop {
-    padding: 0 0 0 186px;
+    padding: 0 0 0 190px;
     margin: 0;
   }
 }

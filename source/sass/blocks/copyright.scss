@@ -1,8 +1,12 @@
 .copyright {
   width: 100%;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   @include tablet {
     width: 38%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

@@ -1,6 +1,6 @@
 .using {
   padding: 0 20px;
-  margin-bottom: 42px;
+  margin-bottom: 22px;
 
   @include tablet {
     border-bottom: 1px solid $grey-menu;
@@ -11,7 +11,7 @@
   @include desktop {
     padding: 0 106px;
     border-bottom: none;
-    margin-bottom: 15px;
+    margin-bottom: 85px;
   }
 }
 
@@ -31,6 +31,8 @@
 }
 
 .using__list {
+  counter-reset: section;
+
   @include reset-ul;
   display: flex;
   flex-direction: column;
@@ -49,11 +51,17 @@
   display: flex;
   margin-bottom: 20px;
   align-items: center;
+  position: relative;
+
 
   @include tablet {
-    width: 50%;
+    width: 45%;
     flex-wrap: wrap;
     margin-bottom: 133px;
+
+    &:nth-child(odd) {
+      margin-right: 66px;
+    }
 
     &:nth-last-child(-n+2) {
       margin-bottom: 103px;
@@ -62,14 +70,32 @@
     &:last-child {
       margin-bottom: 103px;
     }
+
+    &::after {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      left: 114px;
+      top: -38px;
+      right: 0;
+      font-size: 280px;
+      line-height: 1;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: $background-grey;
+      z-index: -1;
+    }
   }
 
   @include desktop {
-    width: 25%;
-    max-width: 230px;
+    max-width: 25%;
     margin-bottom: 0;
     padding: 0;
     align-items: flex-start;
+    margin-right: 77px;
+
+    &:nth-child(odd) {
+      margin-right: 77px;
+    }
 
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
@@ -82,12 +108,56 @@
 }
 
 .using__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   flex-shrink: 0;
   background-color: $basic-green;
   margin-right: 20px;
   box-sizing: border-box;
+
+  &::before {
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @include retina {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+
+    @include retina {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @include retina {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @include retina {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
 
   @include tablet {
     width: 80px;
@@ -111,5 +181,6 @@
 
   @include desktop {
     align-items: flex-start;
+    padding: 0;
   }
 }

@@ -17,7 +17,7 @@
   }
 
   @include tablet {
-    padding: 66px 72px 58px 71px;
+    padding: 66px 72px 40px 71px;
   }
 
   @include desktop {
@@ -67,6 +67,13 @@
   @include desktop {
     margin-right: 10px;
     text-align: left;
+  }
+}
+
+.contact__text span {
+  @include tablet {
+    display: block;
+    margin-top: 18px;
   }
 }
 

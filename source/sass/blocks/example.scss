@@ -38,7 +38,7 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin: 7px 20px;
+  margin: 27px 20px 0;
   box-sizing: border-box;
 
   @include tablet {
@@ -57,11 +57,12 @@
   font-family: $font-arial;
   color: $basic-grey;
   margin: 0;
-  padding-bottom: 49px;
+  padding-bottom: 26px;
 
   @include tablet {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 49px;
   }
 
   @include desktop {
@@ -96,7 +97,6 @@
   @include tablet {
     justify-content: flex-start;
     padding-bottom: 0;
-    width: auto;
   }
 
   @include desktop {
@@ -111,25 +111,26 @@
   text-align: center;
   width: 124px;
   padding: 14px 0;
-  margin-right: 43px;
+
 
   @include tablet {
     width: 162px;
     padding: 18px 0;
+    margin-right: 43px;
   }
 }
 
 .example__statistic b {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
 
   @include tablet {
     font-size: 34px;
     line-height: 37px;
-    text-transform: uppercase;
   }
 
   @include desktop {
@@ -142,7 +143,7 @@
   font-size: 12px;
   line-height: 12px;
   color: $basic-grey;
-  width: 85px;
+  width: 81px;
   background-color: $grey;
   margin: 0 auto;
   position: absolute;
@@ -150,12 +151,12 @@
   top: 44px;
 
   @include tablet {
+    width: 128px;
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
     top: 65px;
     left: 15px;
-    width: 128px;
   }
 
   @include desktop {
@@ -173,8 +174,8 @@
 
   @include tablet {
     font-size: 20px;
-    text-align: left;
-    margin-left: 118px;
+    text-align: right;
+    width: 38%;
   }
 
   @include desktop {
@@ -189,10 +190,12 @@
 
   @include tablet {
     text-align: right;
+    display: block;
   }
 
   @include desktop {
     padding-right: 66px;
+    display: inline;
   }
 }
 
