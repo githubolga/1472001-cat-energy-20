@@ -25,6 +25,14 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablet {
+    margin-right: 28px;
+  }
+
+  @include desktop {
+    margin-right: 36px;
+  }
 }
 
 .social__link {
