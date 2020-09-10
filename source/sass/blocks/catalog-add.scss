@@ -18,12 +18,11 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0;
-  padding-bottom: 34px;
-  padding-top: 30px;
-  border-bottom: 1px solid $grey-line-small;
-  box-sizing: border-box;
-  display: inline-block;
+  width: 226px;
+  padding-right: 20px;
+  margin-bottom: 34px;
+  margin-top: 30px;
+  background: $basic-white;
   position: relative;
 
   &::before {
@@ -65,6 +64,7 @@
 .catalog-add__list {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $grey-line-small;
 
   @include desktop {
     width: 70%;
