@@ -18,7 +18,7 @@
 }
 
 .example__flex {
-  padding: 33px 20px 42px 20px;
+  padding: 33px 20px 35px 20px;
   box-sizing: border-box;
 
   @include tablet {
@@ -58,11 +58,13 @@
   color: $basic-grey;
   margin: 0;
   padding-bottom: 26px;
+  padding-right: 13px;
 
   @include tablet {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 49px;
+    padding-right: 0;
   }
 
   @include desktop {
@@ -186,11 +188,12 @@
 }
 
 .example__title-small span {
-  padding-right: 3px;
+  padding-right: 32px;
 
   @include tablet {
     text-align: right;
     display: block;
+    padding-right: 3px;
   }
 
   @include desktop {

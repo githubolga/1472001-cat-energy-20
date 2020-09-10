@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px auto 16px auto;
+  margin: 10px auto -1px auto;
 
 
   @include tablet {
@@ -38,6 +38,7 @@
   @include reset-button;
   display: flex;
   flex-direction: column;
+  padding: 0 20px 12px 0;
 
   @include tablet {
     display: none;

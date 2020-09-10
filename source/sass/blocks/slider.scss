@@ -19,7 +19,7 @@
   @include reset-ul;
   display: flex;
   align-items: center;
-  padding: 0 0 14px;
+  padding: 0 0 22px;
 
   @include tablet {
     min-height: 354px;
@@ -38,16 +38,18 @@
 
   @include tablet {
     position: absolute;
-    width: 100%;
-    text-align: center;
     bottom: 4px;
-    left: 7px;
+    left: 15px;
   }
 
   @include desktop {
     bottom: 23px;
     left: 13px;
   }
+}
+
+.slider__pics {
+  display: block;
 }
 
 .slider__buttons {
