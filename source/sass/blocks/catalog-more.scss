@@ -12,14 +12,15 @@
   @include tablet {
     border: 2px solid $background-grey;
     align-self: stretch;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 68px;
-    padding: 0 38px;
+    padding: 40px 55px 40px;
     width: calc(50% - 30px);
   }
 
   @include desktop {
     width: calc(25% - 60px);
+    padding: 157px 38px 30px 38px;
     margin-bottom: 75px;
   }
 }
@@ -63,6 +64,7 @@
   color: $basic-grey;
   background-color: $background-grey;
   padding: 10px 96px;
+  display: inline-block;
 
 
   &:hover {
@@ -90,7 +92,12 @@
       background: url("../img/icon-plus.svg");
       width: 60px;
       height: 60px;
-      bottom: 326px;
+      bottom: 320px;
     }
+  }
+
+   @include tablet {
+    padding: 10px 15px;
+    width: 100%;
   }
 }
