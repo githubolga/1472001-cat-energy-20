@@ -63,7 +63,7 @@
           </fieldset>
 
           <fieldset class="filters form__fieldset form__fieldset--programm">
-            <ul class="filters__list">
+            <ul class="filters__list filters__list--programm">
               <li class="filters__item">
                 <input id="filter-slim" class="filters__radio visually-hidden" type="radio" name="programm" value="slim" checked>
                 <label class="filters__label" for="filter-slim">Похудение</label>
@@ -86,10 +86,16 @@
               <p class="form__item form__item--contact">
                 <label class="form__label" for="form-email">E-mail:*</label>
                 <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="form__icon-mail form__icon" width="20" height="14">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
               </p>
               <p class="form__item form__item--contact">
                 <label class="form__label" for="form-tel">Телефон:*</label>
                 <input class="form__input" id="form-tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="form__icon-phone form__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
               </p>
             </div>
         </fieldset>
@@ -104,19 +110,39 @@
           <ul class="filters__list filters__list--add">
             <li class="filters__item filters__item--add">
               <input id="filter-sugar" class="filters__checkbox visually-hidden" type="checkbox" name="additional" value="sugar" checked>
-              <label class="filters__label" for="filter-sugar">Сахарозаменитель</label>
+             <label class="filters__label" for="filter-sugar">
+               <svg class="filters__icon-tick" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+                  Сахарозаменитель
+              </label>
             </li>
             <li class="filters__item filters__item--add">
               <input id="filter-water" class="filters__checkbox visually-hidden" type="checkbox" name="additional" value="water">
-              <label class="filters__label" for="filter-water">Питьевая вода</label>
+              <label class="filters__label" for="filter-water">
+                <svg class="filters__icon-tick" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+                  Питьевая вода
+              </label>
             </li>
             <li class="filters__item filters__item--add">
               <input id="filter-milk" class="filters__checkbox visually-hidden" type="checkbox" name="additional" value="milk">
-              <label class="filters__label" for="filter-milk">Молоко</label>
+              <label class="filters__label" for="filter-milk">
+                <svg class="filters__icon-tick" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+                  Молоко
+              </label>
             </li>
             <li class="filters__item filters__item--add">
               <input id="filter-vit" class="filters__checkbox visually-hidden" type="checkbox" name="additional" value="vit">
-              <label class="filters__label" for="filter-vit">Витамины</label>
+              <label class="filters__label" for="filter-vit">
+                <svg class="filters__icon-tick" width="18" height="14">
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+                  Витамины
+              </label>
             </li>
           </ul>
         </fieldset>

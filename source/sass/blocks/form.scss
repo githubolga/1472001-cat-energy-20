@@ -29,7 +29,6 @@
   padding: 0;
   margin: 27px 20px 37px;
   box-sizing: border-box;
-  width: 100%;
 
   @include tablet {
     font-size: 60px;
@@ -57,7 +56,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-grey;
-  // padding: 0 0 26px 20px;
   margin: 0;
   border: 0;
 
@@ -82,8 +80,12 @@
 }
 
 .form__fieldset--bio {
-  border-bottom: 1px solid $grey-fieldset;
   padding: 21px 22px 22px 20px;
+  border-bottom: 1px solid $grey-fieldset;
+
+  @include tablet {
+      border: none;
+    }
 
   @include desktop {
     width: 50%;
@@ -93,6 +95,11 @@
 
 .form__fieldset--programm {
   padding: 21px 22px 13px 20px;
+  border-bottom: 1px solid $grey-fieldset;
+
+  @include tablet {
+      border: none;
+    }
 
   @include desktop {
     width: 50%;
@@ -123,14 +130,30 @@
 }
 
 .form__item--contact {
+  position: relative;
+  width: 100%;
+
   @include desktop {
     width: 48%;
+    margin-bottom: 0;
   }
 }
 
 .form__label {
   margin-right: 14px;
   flex-shrink: 0;
+}
+
+.form__icon-mail {
+  position: absolute;
+  fill: $catalog-grey;
+  right: 33px;
+}
+
+.form__icon-phone {
+  position: absolute;
+  fill: $basic-black;
+  right: 32px;
 }
 
 .form__input {
@@ -147,16 +170,24 @@
 
   &:focus {
     border-color: $basic-grey;
+    & + .form__icon {
+      fill: $basic-green;
+    }
   }
 
   &:invalid {
     border-color: $red;
+    & + .form__icon {
+      fill: $red;
+    }
   }
 
   @include tablet {
     width: 100%;
   }
 }
+
+
 
 .form__textarea {
   width: 100%;
@@ -204,11 +235,10 @@
   transition: all 0.3s linear;
 
   &:hover {
-    background-color: $$basic-green2;
+    background-color: $basic-green2;
   }
 
-  .form__button span
-   &:active {
+  &:active span {
     opacity: 0.3;
   }
 
