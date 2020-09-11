@@ -1,0 +1,52 @@
+.title-row {
+  position: relative;
+
+  & span {
+    background: $basic-white;
+    padding-right: 24px;
+
+    @include tablet {
+      padding-right: 35px;
+      padding-left: 37px;
+    }
+
+    @include desktop {
+      padding-left: 30px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: calc(100vw - 20px);
+    height: 2px;
+    background: $basic-green;
+    z-index: -1;
+
+    @include tablet {
+      top: 59%;
+      width: calc(100vw - 30px);
+    }
+  }
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 80px;
+    margin-top: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 59%;
+      right: 0;
+      width: 100vw;
+      height: 2px;
+      background: $basic-green;
+      z-index: -1;
+    }
+  }
+}
