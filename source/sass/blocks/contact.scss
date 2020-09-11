@@ -11,6 +11,7 @@
   justify-content: space-between;
   padding: 28px 19px 26px 19px;
   background: $background-grey;
+  box-sizing: border-box;
 
   &--white {
     background: $basic-white;
@@ -21,10 +22,10 @@
   }
 
   @include desktop {
-    width: 430px;
-    padding: 64px 67px 58px 73px;
+    width: 570px;
+    padding: 64px 76px 58px 73px;
     position: absolute;
-    top: 89px;
+    top: 99px;
     left: 110px;
     background: $basic-white;
     z-index: 1;

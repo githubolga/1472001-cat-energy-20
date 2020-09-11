@@ -64,6 +64,10 @@
     flex-direction: column;
     padding: 161px 38px 33px 35px;
   }
+
+  @include desktop {
+    padding: 161px 38px 36px 35px;
+  }
 }
 
 .product__image {

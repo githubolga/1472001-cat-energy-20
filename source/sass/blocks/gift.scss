@@ -25,6 +25,7 @@
     margin-left: 79px;
     height: auto;
     width: 245px;
+    padding: 64px 25px 39px 28px;
   }
 }
 
@@ -44,5 +45,9 @@
   @include tablet {
     text-align: left;
     padding-top: 10px;
+  }
+
+  @include desktop {
+    text-align: center;
   }
 }
