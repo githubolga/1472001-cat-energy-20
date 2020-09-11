@@ -15,7 +15,7 @@
   @include tablet {
     flex-direction: row;
     height: 200px;
-    padding: 50px 90px;
+    padding: 40px 124px 50px 91px;
     background-image: url("../img/gift-photo-tablet.jpg");
   }
 
@@ -43,5 +43,6 @@
 
   @include tablet {
     text-align: left;
+    padding-top: 10px;
   }
 }

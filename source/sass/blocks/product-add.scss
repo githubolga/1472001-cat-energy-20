@@ -6,9 +6,6 @@
   border-bottom: 1px solid $grey-line-small;
   width: 100%;
 
-  &:last-child {
-    margin-bottom: 39px;
-  }
 
   @include tablet {
     flex-direction: row;
@@ -17,12 +14,11 @@
     border: 1px solid $grey-line-small;
     border-bottom: 0;
     margin-bottom: 0;
-    padding: 26px 28px;
+    padding: 26px 37px;
     box-sizing: border-box;
 
     &:last-child {
       border-bottom: 1px solid $grey-line-small;
-      margin-bottom: 78px;
     }
   }
 
@@ -30,10 +26,6 @@
     border-right: 0;
     border-left: 0;
     padding: 15px 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -70,7 +62,7 @@
     font-size: 16px;
     line-height: 20px;
     width: 30%;
-    margin: 0 0 24px 0;
+    margin: 0 3px 20px 0;
   }
 
   @include desktop {
