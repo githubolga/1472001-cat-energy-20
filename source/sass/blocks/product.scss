@@ -62,7 +62,7 @@
 
   @include tablet {
     flex-direction: column;
-    padding: 161px 30px 33px 35px;
+    padding: 161px 38px 33px 35px;
   }
 }
 
@@ -72,7 +72,7 @@
   @include tablet {
     width: 100%;
     position: absolute;
-    bottom: 215px;
+    bottom: 220px;
     left: 0;
     text-align: center;
   }
