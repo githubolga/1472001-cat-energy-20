@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px auto -1px auto;
+  margin: 3px auto -1px auto;
 
 
   @include tablet {
@@ -48,8 +48,8 @@
 
 .header__burger-icon--close {
   display: none;
-  padding-right: 23px;
-  padding-bottom: 10px;
+  padding-right: 3px;
+  padding-bottom: 3px;
 }
 
 .header__burger.m-show {

@@ -30,7 +30,7 @@
 }
 
 .filters__item {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -83,12 +83,19 @@
 .filters__checkbox + .filters__label::after {
   content: "";
   position: absolute;
+  background: url("../img/icon-tick.svg") no-repeat;
   flex-shrink: 0;
-  left: 8px;
-  top: 8px;
+  width: 18px;
+  height: 14px;
+  left: 7px;
+  fill: $basic-green;
   display: none;
 }
 
 .filters__checkbox:checked + .filters__label::after {
   display: inline-flex;
+}
+
+.filters__checkbox {
+  margin-right: 10px;
 }

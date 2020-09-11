@@ -25,9 +25,9 @@
 .form__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
-  padding: 27px 20px 37px;
-  border-top: 1px solid $grey-fieldset;
+  font-weight: 400;
+  padding: 0;
+  margin: 27px 20px 37px;
   box-sizing: border-box;
   width: 100%;
 
@@ -41,7 +41,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 230px;
-  padding-bottom: 37px;
+  padding-bottom: 19px;
   padding-left: 20px;
 
   @include tablet {
@@ -57,10 +57,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-grey;
-  padding: 0 0 26px 20px;
+  // padding: 0 0 26px 20px;
   margin: 0;
   border: 0;
-  // border-bottom: 1px solid $grey-fieldset;
 
   @include tablet {
     font-size: 20px;
@@ -71,7 +70,10 @@
 .form__legend {
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   text-transform: none;
+  margin: 0;
+  margin-bottom: 32px;
 
   @include tablet {
     font-size: 36px;
@@ -79,16 +81,35 @@
   }
 }
 
-.form__fieldset--bio,
-.form__fieldset--programm {
+.form__fieldset--bio {
   border-bottom: 1px solid $grey-fieldset;
-  padding: 21px 0 21px 20px;
-
+  padding: 21px 22px 22px 20px;
 
   @include desktop {
     width: 50%;
     border: none;
   }
+}
+
+.form__fieldset--programm {
+  padding: 21px 22px 13px 20px;
+
+  @include desktop {
+    width: 50%;
+    border: none;
+  }
+}
+
+.form__fieldset--contact {
+  padding: 35px 22px 13px 20px;
+}
+
+.form__fieldset--comments {
+  padding: 15px 22px 13px 20px;
+}
+
+.form__fieldset--add {
+  padding: 15px 22px 23px 20px;
 }
 
 .form__item {
@@ -115,7 +136,7 @@
 .form__input {
   border: 1px solid $grey-border;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 12px 15px;
   transition: border-color 0.3s linear;
   outline: 0;
   width: 100%;
@@ -143,7 +164,7 @@
   box-sizing: border-box;
   border: 1px solid $grey-border;
   text-transform: uppercase;
-  padding: 14px;
+  padding: 14px 11px 14px 14px;
   transition: border-color 0.3s linear;
   outline: 0;
 
@@ -178,7 +199,8 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $basic-green;
-  padding: 7px 10px;
+  padding: 10px 78px;
+  margin-bottom: 20px;
   transition: all 0.3s linear;
 
   &:hover {
@@ -201,6 +223,7 @@
 .form__help {
   font-family: $font-arial;
   line-height: 16px;
-  margin: 0;
   text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
 }
