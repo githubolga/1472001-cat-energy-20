@@ -193,22 +193,23 @@
 
 .form__button {
   @include reset-button;
-  color: $basic-white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   background-color: $basic-green;
+  color: $basic-white;
   padding: 10px 78px;
   margin-bottom: 20px;
   transition: all 0.3s linear;
 
   &:hover {
-    background-color: $green-hover;
+    background-color: $$basic-green2;
   }
 
-  &:active {
-    color: $green-active-text;
+  .form__button span
+   &:active {
+    opacity: 0.3;
   }
 
   @include tablet {
