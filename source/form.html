@@ -81,32 +81,44 @@
         </div>
 
         <fieldset class="form__fieldset form__fieldset--contact">
-          <h3 class="form__legend green-line"><span>Контактные данные (владельца кота)</span></h3>
-            <div class="form__wrapper">
-              <p class="form__item form__item--contact">
-                <label class="form__label" for="form-email">E-mail:*</label>
-                <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                  <svg class="form__icon-mail form__icon" width="20" height="14">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                  </svg>
-              </p>
-              <p class="form__item form__item--contact">
-                <label class="form__label" for="form-tel">Телефон:*</label>
-                <input class="form__input" id="form-tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                  <svg class="form__icon-phone form__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
-              </p>
-            </div>
+          <div class="form__legend-wrapper green-line">
+            <h3 class="form__legend">
+              <span>Контактные данные (владельца кота)</span>
+            </h3>
+          </div>
+          <div class="form__wrapper">
+            <p class="form__item form__item--contact">
+              <label class="form__label" for="form-email">E-mail:*</label>
+              <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="form__icon-mail form__icon" width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+            </p>
+            <p class="form__item form__item--contact">
+              <label class="form__label" for="form-tel">Телефон:*</label>
+              <input class="form__input" id="form-tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <svg class="form__icon-phone form__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+            </p>
+          </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--comments">
-          <h3 class="form__legend green-line"><span>Комментарий</span></h3>
+          <div class="form__legend-wrapper green-line">
+            <h3 class="form__legend">
+              <span>Комментарий</span>
+            </h3>
+          <div>
           <textarea class="form__textarea" id="form-text" name="text" placeholder="Расскажите обо всех поводках кота"></textarea>
         </fieldset>
 
         <fieldset class="filters form__fieldset filters form__fieldset--add">
-          <h3 class="form__legend green-line"><span>Дополнительно</span></h3>
+          <div class="form__legend-wrapper green-line">
+            <h3 class="form__legend">
+              <span>Дополнительно</span>
+            </h3>
+          </div>
           <ul class="filters__list filters__list--add">
             <li class="filters__item filters__item--add">
               <input id="filter-sugar" class="filters__checkbox visually-hidden" type="checkbox" name="additional" value="sugar" checked>
