@@ -83,10 +83,10 @@
         <fieldset class="form__fieldset form__fieldset--contact">
           <div class="form__legend-wrapper green-line">
             <h3 class="form__legend">
-              <span>Контактные данные (владельца кота)</span>
+              <span class="form__legend-title">Контактные данные (владельца кота)</span>
             </h3>
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper-contact">
             <p class="form__item form__item--contact">
               <label class="form__label" for="form-email">E-mail:*</label>
               <input class="form__input js-email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -109,8 +109,10 @@
             <h3 class="form__legend">
               <span>Комментарий</span>
             </h3>
-          <div>
-          <textarea class="form__textarea" id="form-text" name="text" placeholder="Расскажите обо всех поводках кота"></textarea>
+          </div>
+          <div class="form__textarea-wrapper">
+            <textarea class="form__textarea" id="form-text" name="text" placeholder="Расскажите обо всех поводках кота"></textarea>
+          </div>
         </fieldset>
 
         <fieldset class="filters form__fieldset filters form__fieldset--add">

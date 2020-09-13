@@ -65,6 +65,10 @@
   }
 }
 
+.form__legend-wrapper {
+  margin-left: 20px;
+}
+
 .form__legend {
   font-size: 24px;
   line-height: 26px;
@@ -73,10 +77,29 @@
   margin: 0;
   margin-bottom: 32px;
 
+  & span {
+    background: $basic-white;
+    padding-right: 23px;
+    display: inline-block;
+
+    @include tablet {
+      padding-right: 36px;
+      padding-left: 37px;
+    }
+
+    @include desktop {
+      padding-left: 35px;
+    }
+  }
+
   @include tablet {
     font-size: 36px;
     line-height: 36px;
   }
+}
+
+.form__legend-title {
+  margin-right: 96px;
 }
 
 .form__fieldset--bio {
@@ -108,15 +131,19 @@
 }
 
 .form__fieldset--contact {
-  padding: 35px 22px 13px 20px;
+  padding: 35px 0 13px 20px;
+}
+
+.form__wrapper-contact {
+  padding: 0 20px 0 0;
 }
 
 .form__fieldset--comments {
-  padding: 15px 22px 13px 20px;
+  padding: 15px 0 13px 20px;
 }
 
 .form__fieldset--add {
-  padding: 15px 22px 23px 20px;
+  padding: 15px 0 27px 20px;
 }
 
 .form__item {
@@ -147,13 +174,13 @@
 .form__icon-mail {
   position: absolute;
   fill: $catalog-grey;
-  right: 33px;
+  right: 14px;
 }
 
 .form__icon-phone {
   position: absolute;
   fill: $basic-black;
-  right: 32px;
+  right: 14px;
 }
 
 .form__input {
@@ -187,6 +214,10 @@
   @include tablet {
     width: 100%;
   }
+}
+
+.form__textarea-wrapper {
+  padding: 0 20px 0 0;
 }
 
 .form__textarea {
