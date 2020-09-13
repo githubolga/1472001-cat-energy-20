@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   border-bottom: 1px solid $grey-line;
   width: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
   @include tablet {
     background-color: $background-grey;
@@ -96,7 +96,7 @@
 
 .product__name {
   width: 77px;
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 18px;
   font-size: 16px;
   line-height: 20px;
