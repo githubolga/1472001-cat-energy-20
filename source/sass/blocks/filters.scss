@@ -38,6 +38,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .filters__label {
@@ -54,6 +58,10 @@
   width: 21px;
   height: 31px;
   display: none;
+
+  @include tablet {
+    left: 12px;
+  }
 }
 
 .filters__radio + .filters__label::before {
@@ -65,6 +73,11 @@
   flex-shrink: 0;
   box-sizing: border-box;
   margin-right: 10px;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .filters__radio + .filters__label:hover::before {
@@ -83,10 +96,16 @@
   border-radius: 50%;
   background-color: $basic-green;
   flex-shrink: 0;
-
   left: 8px;
   top: 8px;
   display: none;
+
+  @include tablet {
+    left: 11px;
+    top: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filters__radio:checked + .filters__label::after {
@@ -100,6 +119,11 @@
   border: 1px solid $grey-line-small;
   flex-shrink: 0;
   margin-right: 10px;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .filters__checkbox + .filters__label:hover::before {

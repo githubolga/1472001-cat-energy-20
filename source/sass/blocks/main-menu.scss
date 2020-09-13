@@ -92,14 +92,16 @@
       border-bottom: 2px solid $basic-white;
       padding-bottom: 7px;
     }
-
-    &--black {
-      color: $dark-grey;
-    }
   }
 }
 
-.main-menu__link--black.main-menu__link--active {
+.main-menu__list--black .main-menu__link {
+  @include desktop {
+    color: $dark-grey;
+  }
+}
+
+.main-menu__list--black .main-menu__link--active {
   @include desktop {
     border-bottom: 2px solid $basic-green;
     padding-bottom: 7px;

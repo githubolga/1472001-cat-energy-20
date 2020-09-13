@@ -84,8 +84,8 @@
     background-color: $basic-green2;
   }
 
-  &:active span {
-    opacity: 0.3;
+  &:active {
+    color: $green-link;
   }
 
   @include desktop {

@@ -219,6 +219,7 @@
 
   @include tablet {
     flex-direction: row;
+    margin-bottom: 60px;
   }
 
   @include desktop {
@@ -242,18 +243,20 @@
     background-color: $basic-green2;
   }
 
-  &:active span {
-    opacity: 0.3;
+  &:active {
+    color: $green-link;
   }
 
   @include tablet {
     width: 44%;
+    margin-right: 60px;
+    padding: 13px 45px;
+    margin-bottom: 0;
   }
 
   @include desktop {
     width: 568px;
     margin-right: 80px;
-    margin-bottom: 0;
   }
 }
 
@@ -264,7 +267,7 @@
   margin: 0;
   margin-bottom: 32px;
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 0;
   }
 }

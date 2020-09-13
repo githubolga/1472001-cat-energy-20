@@ -6,7 +6,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 0 24px;
+  padding: 20px 20px 24px;
   position: relative;
 
   @include tablet {
@@ -65,24 +65,23 @@
 }
 
 .catalog-more__link {
+  width: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-grey;
   background-color: $background-grey;
-  padding: 10px 96px;
+  padding: 10px 0;
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
-
 
   &:hover {
     background-color: $grey-line;
   }
 
-  &:active span {
-    opacity: 0.3;
+  &:active {
+    color: $grey-link;
   }
 
   &::after {
