@@ -6,6 +6,10 @@
 
     &--programm {
       padding: 25px 28px 29px 28px;
+
+      @include tablet {
+        padding: 25px 28px 17px 28px;
+      }
     }
   }
 }
@@ -20,16 +24,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-}
-
-.filters__item--add {
-  @include tablet {
-    width: 50%;
-  }
-
-  @include desktop {
-    width: 25%;
+    padding: 0;
   }
 }
 
@@ -41,7 +36,21 @@
   }
 
   @include tablet {
-    margin-bottom: 32px;
+    margin-bottom: 7px;
+  }
+}
+
+.filters__item--add {
+  @include tablet {
+    width: 50%;
+    margin-bottom: 24px;
+    margin-right: -34px;
+  }
+
+  @include desktop {
+    width: 25%;
+    margin-bottom: 35px;
+    margin-right: -59px;
   }
 }
 
