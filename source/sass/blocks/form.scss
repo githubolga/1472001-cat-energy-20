@@ -33,11 +33,11 @@
   @include tablet {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 29px 56px;
+    margin: 0 30px 56px;
   }
 
   @include desktop {
-    margin: -35px 29px 56px 111px;
+    margin: -35px 110px 56px 110px;
   }
 }
 
@@ -72,10 +72,6 @@
   }
 }
 
-.form__legend-wrapper {
-  margin-left: 20px;
-}
-
 .form__legend {
   font-size: 24px;
   line-height: 26px;
@@ -91,7 +87,8 @@
 
     @include tablet {
       padding-right: 36px;
-      padding-left: 0;
+      padding-left: 30px;
+      margin-left: -30px;
     }
   }
 

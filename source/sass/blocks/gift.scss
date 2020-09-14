@@ -12,11 +12,19 @@
   box-sizing: border-box;
   align-self: stretch;
 
+  @include retina {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @include tablet {
     flex-direction: row;
     height: 200px;
     padding: 40px 124px 50px 91px;
     background-image: url("../img/gift-photo-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
@@ -26,6 +34,10 @@
     height: auto;
     width: 245px;
     padding: 64px 25px 39px 28px;
+
+    @include retina {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

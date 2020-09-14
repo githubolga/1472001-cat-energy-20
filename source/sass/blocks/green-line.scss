@@ -1,8 +1,5 @@
 .green-line {
   position: relative;
-  margin: 0;
-  padding: 0;
-  z-index: -1;
 
   &::before {
     content: "";
@@ -15,14 +12,21 @@
     z-index: -1;
 
     @include tablet {
-      width: 100%;
-      left: 0;
+      width: 100vw;
+      left: -70px;
       top: 22px;
     }
 
     @include desktop {
-      width: 100vw;
-      left: auto;
+      left: calc(50% - 50vw);
+    }
+  }
+
+  &--catalog::before {
+    left: 0;
+
+    @include desktop {
+      left: calc(50% - 50vw);
     }
   }
 }

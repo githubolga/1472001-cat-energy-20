@@ -14,6 +14,10 @@
     z-index: -1;
     height: 305px;
     width: 100%;
+
+    @include retina {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 
   @include tablet {
@@ -31,14 +35,15 @@
 
     &::before {
       display: block;
-      content: "";
-      position: absolute;
       background-image: url("../img/index-background-desktop.jpg");
-      z-index: -1;
       height: 696px;
       width: 50%;
       top: -228px;
       right: 0;
+
+      @include retina::before {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

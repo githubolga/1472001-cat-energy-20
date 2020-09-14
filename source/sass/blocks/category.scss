@@ -199,8 +199,7 @@
   color: $basic-black;
   background: $background-grey;
   z-index: 1;
-  transition: 0.3s;
-  padding: 0 15px 0 0;
+  padding: 0 20px 0 0;
   margin: 0;
   position: relative;
 
@@ -212,21 +211,19 @@
 }
 
 .category__arrow {
-  content: "";
   position: absolute;
-  left: 114px;
+  left: 112px;
+  transition: left 0.3s;
 
   &:hover {
-    left: 120px;
-    transition: 0.3s;
+    left: 118px;
   }
 
   @include tablet {
-    left: 178px;
+    left: 172px;
 
     &:hover {
-      left: 186px;
-      transition: 0.3s;
+      left: 178px;
     }
   }
 }
