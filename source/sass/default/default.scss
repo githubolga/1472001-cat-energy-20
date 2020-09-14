@@ -5,14 +5,13 @@
 
 body {
   width: 100%;
-  max-width: 1440px;
   min-width: 320px;
-  margin: 0 auto;
   font-family: $font-oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $basic-black;
+  overflow-x: hidden;
 }
 
 a {

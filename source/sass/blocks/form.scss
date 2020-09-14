@@ -1,14 +1,14 @@
-.form {
+.form__container {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0;
 
   @include tablet {
     padding: 0 70px;
   }
 
   @include desktop {
-    padding: 0 30px;
+    padding: 0 110px;
   }
 }
 
@@ -25,11 +25,19 @@
 .form__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  font-weight: 400;
+  padding: 0;
+  margin: 27px 20px 37px;
+  box-sizing: border-box;
 
   @include tablet {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 30px 56px;
+  }
+
+  @include desktop {
+    margin: -35px 110px 56px 110px;
   }
 }
 
@@ -37,11 +45,15 @@
   text-transform: uppercase;
   margin: 0;
   width: 230px;
+  margin-bottom: 19px;
+  padding-left: 20px;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
     width: 330px;
+    padding-left: 0;
+    margin-bottom: 46px;
   }
 }
 
@@ -51,10 +63,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-grey;
-  padding: 0;
   margin: 0;
   border: 0;
-  // border-bottom: 1px solid $grey-fieldset;
 
   @include tablet {
     font-size: 20px;
@@ -65,21 +75,111 @@
 .form__legend {
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   text-transform: none;
+  margin: 0;
+  margin-bottom: 32px;
+
+  & span {
+    background: $basic-white;
+    padding-right: 23px;
+    display: inline-block;
+
+    @include tablet {
+      padding-right: 36px;
+      padding-left: 30px;
+      margin-left: -30px;
+    }
+  }
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 75px;
   }
 }
 
-.form__fieldset--bio,
-.form__fieldset--programm {
+.form__legend-title {
+  margin-right: 96px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.form__legend--add {
+  @include tablet {
+    margin-bottom: 56px;
+  }
+}
+
+.form__fieldset--bio {
+  padding: 21px 22px 22px 20px;
   border-bottom: 1px solid $grey-fieldset;
+
+  @include tablet {
+    border: none;
+    padding: 21px 0 53px 0;
+  }
 
   @include desktop {
     width: 50%;
     border: none;
+    padding: 20px 0 0 0;
+    margin-right: 80px;
+  }
+}
+
+.form__fieldset--programm {
+  padding: 21px 22px 13px 20px;
+  border-bottom: 1px solid $grey-fieldset;
+
+  @include tablet {
+    border: none;
+    padding: 21px 0 41px 0;
+  }
+
+  @include desktop {
+    width: 50%;
+    border: none;
+    padding: 21px 0 34px 0;
+  }
+}
+
+.form__fieldset--contact {
+  padding: 35px 0 13px 20px;
+
+  @include tablet {
+    padding: 35px 0 13px 0;
+  }
+}
+
+.form__wrapper-contact {
+  padding: 0 20px 0 0;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset--comments {
+  padding: 15px 0 13px 20px;
+
+  @include tablet {
+    padding: 55px 0 45px 0;
+  }
+}
+
+.form__fieldset--add {
+  padding: 15px 0 27px 20px;
+
+  @include tablet {
+    padding: 15px 0 24px 0;
   }
 }
 
@@ -91,26 +191,50 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablet {
+    margin: 0 0 23px 0;
+  }
 }
 
 .form__item--contact {
+  position: relative;
+  width: 100%;
+
   @include desktop {
     width: 48%;
+    margin-bottom: 0;
   }
 }
 
 .form__label {
   margin-right: 14px;
   flex-shrink: 0;
+
+  @include tablet {
+    margin-right: 21px;
+  }
+}
+
+.form__icon-mail {
+  position: absolute;
+  fill: $catalog-grey;
+  right: 14px;
+}
+
+.form__icon-phone {
+  position: absolute;
+  fill: $basic-black;
+  right: 14px;
 }
 
 .form__input {
   border: 1px solid $grey-border;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 12px 15px;
   transition: border-color 0.3s linear;
   outline: 0;
-
+  width: 100%;
 
   &:hover {
     border-color: $grey-line-small;
@@ -118,14 +242,30 @@
 
   &:focus {
     border-color: $basic-grey;
+
+    & + .form__icon {
+      fill: $basic-green;
+    }
   }
 
   &:invalid {
     border-color: $red;
+
+    & + .form__icon {
+      fill: $red;
+    }
   }
 
   @include tablet {
     width: 100%;
+  }
+}
+
+.form__textarea-wrapper {
+  padding: 0 20px 0 0;
+
+  @include tablet {
+    padding: 0;
   }
 }
 
@@ -135,7 +275,7 @@
   box-sizing: border-box;
   border: 1px solid $grey-border;
   text-transform: uppercase;
-  padding: 14px;
+  padding: 14px 11px 14px 14px;
   transition: border-color 0.3s linear;
   outline: 0;
 
@@ -159,40 +299,57 @@
 
   @include tablet {
     flex-direction: row;
+    margin-bottom: 73px;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
   }
 }
 
 .form__button {
   @include reset-button;
-  color: $basic-white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   background-color: $basic-green;
-  padding: 7px 10px;
+  color: $basic-white;
+  padding: 10px 78px;
+  margin-bottom: 20px;
   transition: all 0.3s linear;
 
   &:hover {
-    background-color: $green-hover;
+    background-color: $basic-green2;
   }
 
   &:active {
-    color: $green-active-text;
+    color: $green-link;
   }
 
   @include tablet {
-    width: 44%;
+    font-size: 20px;
+    width: 45%;
+    margin-right: 63px;
+    padding: 15px 45px;
+    margin-bottom: 0;
   }
 
   @include desktop {
     width: 568px;
+    margin-right: 80px;
   }
 }
 
 .form__help {
   font-family: $font-arial;
   line-height: 16px;
-  margin: 0;
   text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
 }

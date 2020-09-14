@@ -2,21 +2,72 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $grey;
+  background: $grey;
+
+  @include tablet {
+    background: linear-gradient(to right, $background-grey 50%, $grey 50%);
+  }
+}
+
+.slider__wrapper {
+  margin-bottom: 22px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .slider__list {
   @include reset-ul;
   display: flex;
   align-items: center;
-  padding: 0 0 27px;
+  // padding: 0 0 22px;
+
+  @include tablet {
+    min-height: 354px;
+    position: relative;
+    width: 100%;
+    // padding: 0;
+  }
+}
+
+.slider__item {
+  display: none;
+
+  &.m-current {
+    display: block;
+  }
+
+  @include tablet {
+    position: absolute;
+    bottom: 4px;
+    left: 47px;
+  }
+
+  @include desktop {
+    bottom: 23px;
+    left: 104px;
+  }
+}
+
+.slider__pics {
+  display: block;
 }
 
 .slider__buttons {
   display: flex;
   justify-content: space-between;
-  width: 230px;
-  margin-bottom: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
 }
 
 .slider__button {
@@ -24,10 +75,77 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 6px 0;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted $grey-fieldset;
+
+    &:hover {
+      border-bottom: 1px solid $basic-black;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.slider__scale {
+  width: 84px;
+  height: 12px;
+  border: 1px solid $grey-fieldset;
+  border-radius: 50px;
+  background: $basic-white;
+  position: relative;
+  cursor: pointer;
+  margin: 0 17px;
+
+  @include tablet {
+    width: 428px;
+    height: 6px;
+    margin: 0 25px;
+    background: $grey-fieldset;
+  }
+}
+
+.slider__bar {
+  width: 35px;
+  height: 6px;
+  border-radius: 50px;
+  background: $basic-green;
+  top: 3px;
+  left: 9px;
+  position: absolute;
+  cursor: pointer;
+
+  @include tablet {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    background: $basic-white;
+    border: 1px solid $grey-fieldset;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    top: -14px;
+    left: 199px;
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: $basic-green;
+      margin: auto;
+    }
   }
 }

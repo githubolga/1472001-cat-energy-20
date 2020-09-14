@@ -4,27 +4,38 @@
   justify-content: center;
   border-bottom: 1px solid $grey-fieldset;
   border-top: 1px solid $grey-fieldset;
-  padding: 20px 0 21px 0;
+  padding: 22px 9px 18px 0;
   width: 100%;
   align-items: center;
 
   @include tablet {
     border-bottom: none;
     border-top: none;
+    padding: 0;
+  }
+
+  @include desktop {
+    margin-left: 121px;
   }
 }
 
 .social__item {
-  margin-right: 35px;
+  margin-right: 36px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @include tablet {
-    margin-right: 25px;
+    margin-right: 28px;
+  }
+
+  @include desktop {
+    margin-right: 36px;
   }
 }
 
 .social__link {
-  margin-right: 36px;
-
   &:hover .social__icon {
     fill: $basic-green;
   }
@@ -37,4 +48,25 @@
 .social__icon {
   fill: #666666;
   transition: all 0.3s linear;
+}
+
+.social__icon--vk {
+  @include tablet {
+    width: 29px;
+    height: 17px;
+  }
+}
+
+.social__icon--insta {
+  @include tablet {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon--fb {
+  @include tablet {
+    width: 13px;
+    height: 27px;
+  }
 }

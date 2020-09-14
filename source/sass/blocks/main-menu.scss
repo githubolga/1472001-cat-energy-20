@@ -27,8 +27,8 @@
 
 .main-menu__item {
   border-bottom: 1px solid $grey-menu;
-  padding-bottom: 24px;
-  padding-top: 22px;
+  padding-bottom: 23px;
+  padding-top: 21px;
   width: 100%;
   text-align: center;
 
@@ -36,25 +36,31 @@
     border-top: 1px solid $grey-menu;
   }
 
+  &:last-child {
+    border-bottom: 1px solid $grey-menu;
+  }
+
   &:hover {
-    opacity: 60%;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   @include tablet {
     margin-right: 34px;
     width: auto;
     border: 0;
+    padding-top: 25px;
+
+    &:first-child {
+      border-top: none;
+    }
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &:first-child {
-      border: 0;
+      border-bottom: none;
     }
   }
 }
@@ -73,6 +79,7 @@
 
     &--active {
       border-bottom: 2px solid $basic-green;
+      padding-bottom: 3px;
     }
   }
 
@@ -83,6 +90,20 @@
 
     &--active {
       border-bottom: 2px solid $basic-white;
+      padding-bottom: 7px;
     }
+  }
+}
+
+.main-menu__list--black .main-menu__link {
+  @include desktop {
+    color: $dark-grey;
+  }
+}
+
+.main-menu__list--black .main-menu__link--active {
+  @include desktop {
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 7px;
   }
 }

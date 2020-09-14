@@ -8,24 +8,58 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 60px 43px 60px;
+  padding: 60px 39px 43px;
   box-sizing: border-box;
+  align-self: stretch;
+
+  @include retina {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 
   @include tablet {
     flex-direction: row;
+    height: 200px;
+    padding: 40px 124px 50px 91px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
     background-image: url("../img/gift-photo-desktop.jpg");
     flex-direction: column;
+    margin-left: 79px;
+    height: auto;
+    width: 245px;
+    padding: 64px 25px 39px 28px;
+
+    @include retina {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
+}
+
+.gift__icon {
+  fill: $basic-white;
 }
 
 .gift__text {
   font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $basic-white;
   text-align: center;
   margin: 0;
+
+  @include tablet {
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  @include desktop {
+    text-align: center;
+  }
 }

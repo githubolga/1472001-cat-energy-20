@@ -6,32 +6,42 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  padding: 20px 20px 24px;
+  position: relative;
 
   @include tablet {
     border: 2px solid $background-grey;
-    width: 50%;
     align-self: stretch;
-    justify-content: center;
-    margin-bottom: 14px;
-    padding: 0 40px 0 40px;
+    justify-content: flex-end;
+    margin-bottom: 68px;
+    padding: 134px 35px 35px;
+    width: calc(50% - 30px);
   }
 
   @include desktop {
-    width: 25%;
+    width: calc(25% - 60px);
+    margin-bottom: 75px;
+    padding: 62px 35px 32px 35px;
   }
 }
 
 .catalog-more__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $catalog;
-  margin: 0;
+  color: $dark-grey;
+  margin: 65px 0 8px;
 
   @include tablet {
     font-size: 20px;
     line-height: 22px;
+    margin: 0 39px 23px;
+  }
+
+  @include desktop {
+    margin: 0 0 25px;
   }
 }
 
@@ -41,11 +51,16 @@
   line-height: 16px;
   color: $basic-grey;
   text-align: center;
-  margin: 0;
+  margin: 0 0 21px 0;
 
   @include tablet {
     font-size: 16px;
     line-height: 18px;
+    margin: 0 20px 80px 20px;
+  }
+
+  @include desktop {
+    margin: 0 0 83px 0;
   }
 }
 
@@ -58,4 +73,39 @@
   color: $basic-grey;
   background-color: $background-grey;
   padding: 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $grey-line;
+  }
+
+  &:active {
+    color: $grey-link;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 151px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    fill: $grey-plus;
+    opacity: 0.3;
+    background: url("../img/icon-plus-mobile.svg") no-repeat center;
+
+    @include tablet {
+      background: url("../img/icon-plus.svg");
+      width: 60px;
+      height: 60px;
+      bottom: 314px;
+    }
+  }
+
+  @include tablet {
+    padding: 14px 15px;
+  }
 }

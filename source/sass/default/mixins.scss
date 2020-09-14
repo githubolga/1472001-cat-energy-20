@@ -23,3 +23,9 @@
     @content;
   }
 }
+
+@mixin retina {
+  /*stylelint-disable-line*/@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}
