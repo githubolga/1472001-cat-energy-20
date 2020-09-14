@@ -11,6 +11,7 @@
     background-color: $green-background;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: 320px 305px;
     z-index: -1;
     height: 305px;
     width: 100%;
@@ -36,12 +37,14 @@
     &::before {
       display: block;
       background-image: url("../img/index-background-desktop.jpg");
+      background-size: 720px 696px;
+
       height: 696px;
       width: 50%;
       top: -228px;
       right: 0;
 
-      @include retina::before {
+      @include retina {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
