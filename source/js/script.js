@@ -9,12 +9,12 @@ if (menu.classList.contains("no-js")) {
 
 buttonMenu.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (menu.classList.contains("m-show")) {
-    menu.classList.remove("m-show");
-    buttonMenu.classList.remove("m-show");
+  if (menu.classList.contains("modal-show")) {
+    menu.classList.remove("modal-show");
+    buttonMenu.classList.remove("modal-show");
   } else {
-    menu.classList.add("m-show");
-    buttonMenu.classList.add("m-show");
+    menu.classList.add("modal-show");
+    buttonMenu.classList.add("modal-show");
   }
 });
 

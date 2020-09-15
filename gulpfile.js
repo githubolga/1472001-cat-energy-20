@@ -15,7 +15,7 @@ const htmlmin = require("gulp-htmlmin");
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass//*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
 }
 
 //html
@@ -23,6 +23,7 @@ const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build/"))
+    .pipe(sync.stream());
 };
 exports.html = html
 
@@ -101,19 +102,10 @@ const clean = () => {
 }
 exports.clean = clean;
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 exports.build = gulp.series(
   clean, copy, styles, image, html
 );
 
 exports.start = gulp.series(
-  clean,
-  copy,
-  styles,
-  html,
-  server,
-  watcher
+  clean, copy, styles, html, server, watcher
 );

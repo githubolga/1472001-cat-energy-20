@@ -76,18 +76,20 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 6px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
 
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $grey-fieldset;
+    border-bottom-color: $grey-fieldset;
 
     &:hover {
-      border-bottom: 1px solid $basic-black;
+      border-bottom-color: $basic-black;
     }
 
     &:active {
-      border-bottom: none;
+      border-bottom-color: transparent;
     }
   }
 }

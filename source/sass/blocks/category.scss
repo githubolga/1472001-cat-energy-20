@@ -182,9 +182,27 @@
   }
 }
 
+.category__arrow {
+  position: absolute;
+  left: 112px;
+  transition: left 0.3s;
+
+  @include tablet {
+    left: 172px;
+  }
+}
+
 .category__link {
   display: flex;
   align-items: center;
+
+  &:hover .category__arrow {
+    left: 118px;
+
+    @include tablet {
+      left: 178px;
+    }
+  }
 
   &:active {
     opacity: 0.3;
@@ -206,23 +224,5 @@
     font-size: 20px;
     line-height: 30px;
     width: 108px;
-  }
-}
-
-.category__arrow {
-  position: absolute;
-  left: 112px;
-  transition: left 0.3s;
-
-  &:hover {
-    left: 118px;
-  }
-
-  @include tablet {
-    left: 172px;
-
-    &:hover {
-      left: 178px;
-    }
   }
 }
