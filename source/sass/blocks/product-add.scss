@@ -44,7 +44,7 @@
   }
 
   @include desktop {
-    width: 30%;
+    width: 33%;
     margin: 0;
   }
 }
@@ -67,6 +67,7 @@
 
   @include desktop {
     margin: 0;
+    width: 33%;
   }
 }
 
@@ -89,6 +90,6 @@
   }
 
   @include desktop {
-    width: 30%;
+    width: 27%;
   }
 }

@@ -9,11 +9,12 @@
   @include tablet {
     margin-bottom: 76px;
     margin-left: 0;
+    margin-top: 75px;
   }
 
   @include desktop {
     max-width: 1220px;
-    margin: 0 auto;
+    margin: 81px auto 0 auto;
     margin-bottom: 86px;
   }
 }
@@ -85,7 +86,7 @@
   }
 
   @include desktop {
-    width: 70%;
+    width: 896px;
     margin-bottom: 0;
   }
 }

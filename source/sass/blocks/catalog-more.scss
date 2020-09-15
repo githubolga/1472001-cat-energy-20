@@ -13,15 +13,16 @@
     border: 2px solid $background-grey;
     align-self: stretch;
     justify-content: flex-end;
-    margin-bottom: 68px;
     padding: 134px 35px 35px;
+    margin-top: 140px;
     width: calc(50% - 30px);
+    min-height: 429px;
   }
 
   @include desktop {
     width: calc(25% - 60px);
-    margin-bottom: 75px;
     padding: 62px 35px 32px 35px;
+    min-height: 430px;
   }
 }
 
