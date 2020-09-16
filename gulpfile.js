@@ -20,8 +20,8 @@ exports.reload = reload;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass//*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("copy", reload));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series("html", reload));
 }
 
 // html
