@@ -13,12 +13,12 @@
     <header class="header">
       <a class="header__logo" href="index.html">
         <picture class="header__pics">
-          <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <button class="header__burger js-menu-button" type="button">
+      <button class="header__burger js-menu-button no-js" type="button">
         <svg class="header__burger-icon header__burger-icon--open" width="24" height="19">
           <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
         </svg>
@@ -168,7 +168,10 @@
         </div>
         <div class="contact__map" id="map">
           <picture class="contact__pics">
-            <source media="(min-width: 1240px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="contact__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
           </picture>

@@ -23,9 +23,9 @@
 
   @include desktop {
     width: 570px;
-    padding: 64px 76px 58px 73px;
+    padding: 65px 76px 58px 76px;
     position: absolute;
-    top: 99px;
+    top: 95px;
     left: 110px;
     background: $basic-white;
     z-index: 1;
@@ -46,8 +46,7 @@
   }
 
   @include desktop {
-    line-height: 21px;
-    padding-top: 7px;
+    line-height: 25px;
   }
 }
 
@@ -66,7 +65,6 @@
   }
 
   @include desktop {
-    margin-right: 10px;
     text-align: left;
   }
 }

@@ -41,7 +41,7 @@
 
       height: 696px;
       width: 50%;
-      top: -228px;
+      top: -224px;
       right: 0;
 
       @include retina {
@@ -89,7 +89,7 @@
   }
 
   @include desktop {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 }
 
@@ -131,8 +131,8 @@
   }
 
   @include desktop {
-    left: 554px;
-    top: -85px;
+    left: 558px;
+    top: -83px;
     width: 552px;
     height: 499px;
     margin-bottom: 0;

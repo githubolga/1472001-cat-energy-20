@@ -6,6 +6,9 @@ if (menu.classList.contains("no-js")) {
   menu.classList.remove("no-js");
 }
 
+if (buttonMenu.classList.contains("no-js")) {
+  buttonMenu.classList.remove("no-js");
+}
 
 buttonMenu.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -32,7 +35,7 @@ function map () {
     hintContent: "Cat Energy 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8"
   }, {
     iconLayout: "default#image",
-    iconImageHref: "./../img/map-pin.png",
+    iconImageHref: "./img/map-pin.png",
     iconImageSize: [124, 106]
   });
   myMap.behaviors.disable("scrollZoom");

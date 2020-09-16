@@ -13,12 +13,12 @@
     <header class="header">
       <a class="header__logo" href="#">
         <picture class="header__pics">
-          <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <button class="header__burger js-menu-button" type="button">
+      <button class="header__burger js-menu-button no-js" type="button">
         <svg class="header__burger-icon header__burger-icon--open" width="24" height="19">
           <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
         </svg>
@@ -49,7 +49,10 @@
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <div class="promo__image">
             <picture class="promo__pics">
-              <source media="(min-width: 1240px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/index-can-mobile.webp, img/index-can-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet@2x.jpg 2x">
               <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="cat energy pro курица 500">
             </picture>
@@ -141,14 +144,20 @@
           <div class="slider__wrapper">
             <ul class="slider__list">
               <li class="slider__item m-current">
-                <picture class="slider__pics">
+                <picture class="slider__pics slider__pics">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 1240px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                   <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="cat before">
                 </picture>
               </li>
               <li class="slider__item">
-                <picture class="slider__pics">
+                <picture class="slider__pics slider__pics">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 1240px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                   <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="cat after">
@@ -174,7 +183,10 @@
         </div>
         <div class="contact__map" id="map">
           <picture class="contact__pics">
-            <source media="(min-width: 1240px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="contact__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
           </picture>
