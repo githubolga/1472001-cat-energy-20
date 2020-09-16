@@ -87,6 +87,11 @@
   @include tablet {
     width: 40px;
     height: 40px;
+    margin-right: 18px;
+  }
+
+  @include desktop {
+    margin-right: 20px;
   }
 }
 
@@ -133,6 +138,11 @@
   @include tablet {
     width: 40px;
     height: 40px;
+    margin-right: 15px;
+  }
+
+  @include desktop {
+    margin-right: 16px;
   }
 }
 

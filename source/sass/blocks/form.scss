@@ -181,6 +181,10 @@
   @include tablet {
     padding: 15px 0 24px 0;
   }
+
+  @include desktop {
+    padding: 19px 0 20px 0;
+  }
 }
 
 .form__item {
@@ -202,7 +206,7 @@
   width: 100%;
 
   @include desktop {
-    width: 48%;
+    width: 47%;
     margin-bottom: 0;
   }
 }
